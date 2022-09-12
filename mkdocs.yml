@@ -57,11 +57,11 @@ nav:
   - 工具: 
     - tools/index.md 
   - 关于:
-    - ABOUT/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
-    - 支持作者: ABOUT/support.md
-    - 文章编写帮助: ABOUT/help.md
-    - 网站构建: ABOUT/build.md
-    - 测试文档: ABOUT/test.md
+    - about/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
+    - 支持作者: about/support.md
+    - 文章编写帮助: about/help.md
+    - 网站构建: about/build.md
+    - 测试文档: about/test.md
 
 # [Extensions]
 plugins:
