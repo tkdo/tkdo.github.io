@@ -46,8 +46,8 @@ extra:
 
 # [Navigtion]
 nav:
-  - 讲稿: 
-    - LECTURE/index.md 
+  - 推荐系统: 
+    - recommand/index.md 
   - 关于:
     - ABOUT/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
     - 支持作者: ABOUT/support.md
