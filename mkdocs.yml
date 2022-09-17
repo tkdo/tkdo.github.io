@@ -46,6 +46,8 @@ extra:
 
 # [Navigtion]
 nav:
+  - 语言: 
+    - language/index.md 
   - 数据: 
     - data/index.md 
   - 推荐: 
@@ -63,6 +65,7 @@ nav:
     - 网站构建: about/build.md
     - 测试文档: about/test.md
 
+    
 # [Extensions]
 plugins:
   - search: # 现在还不支持中文搜索 支持之后可以设置语言
