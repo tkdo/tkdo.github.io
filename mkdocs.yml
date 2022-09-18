@@ -7,7 +7,7 @@ site_description: TKDO的个人网站
 # [UI]
 ## [top]
 theme:
-  custom_dir: overrides
+  # custom_dir: overrides # 评论
   name: material
   palette: 
     - scheme: default # 日间模式
