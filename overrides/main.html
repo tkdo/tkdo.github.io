@@ -3,21 +3,21 @@
 {% block content %}
   {{ super() }}
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <div id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <div id="gitalk-container"></div>
 
-<script>
+  <script>
 const gitalk = new Gitalk({
-  clientID: '98d5a4795b32fa1806cd',
-  clientSecret: 'fecfbee8b8b2d1d1d8be718e8c113795d847437b',
+  clientID: 'af9ed895fed1ffe161e8',
+  clientSecret: '2b9fb7220039bc71905da454fc758ee7c9a2d9bd',
   repo: 'tkdo.github.io',      // The repository of store comments,
   owner: 'tkdo',
   admin: ['tkdo'],
-  id: tkdo.comments,      // Ensure uniqueness and length less than 50
+  id: 'comment',      // Ensure uniqueness and length less than 50
   distractionFreeMode: false  // Facebook-like distraction free mode
 })
 
 gitalk.render('gitalk-container')
-</script>
+  </script>
 {% endblock %}
