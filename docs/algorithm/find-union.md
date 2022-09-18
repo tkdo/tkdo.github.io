@@ -22,7 +22,7 @@ def union(a, b):
     p[pa] = pb
     size[pb] = size[pb] + size[pa]
 ```
-## [826. 最大人工岛](https://leetcode.cn/problems/making-a-large-island/)
+## [leetcode-826-最大人工岛](https://leetcode.cn/problems/making-a-large-island/)
 ```python
 class Solution:
 def largestIsland(self, grid: List[List[int]]) -> int:
