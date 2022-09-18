@@ -46,6 +46,9 @@ extra:
 
 # [Navigtion]
 nav:
+  - 算法: 
+    - algorithm/index.md 
+    - 并查集: algorithm/find-union.md
   - 语言: 
     - language/index.md 
   - 数据: 
@@ -54,9 +57,6 @@ nav:
     - recommand/index.md 
   - 搜索: 
     - search/index.md 
-  - 算法: 
-    - algorithm/index.md 
-    - 并查集: algorithm/find-union.md
   - 工具: 
     - tools/index.md 
   - 关于:
