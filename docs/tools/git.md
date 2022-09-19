@@ -1,5 +1,4 @@
 ## 删除分支
-
 - 删除本地分支
     ```shell 
     git branch -d localBranchName
