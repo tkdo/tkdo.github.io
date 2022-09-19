@@ -52,15 +52,17 @@ nav:
     - 并查集: algorithm/find-union.md
   - 语言: 
     - language/index.md 
+    - Bash: language/bash.md 
   - 数据: 
     - data/index.md 
+    - Hive: data/index.md 
   - 推荐: 
     - recommand/index.md 
   - 搜索: 
     - search/index.md 
   - 工具: 
     - tools/index.md 
-    - tools/git.md 
+    - Git: tools/git.md 
   - 关于:
     - about/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
     - 支持作者: about/support.md
