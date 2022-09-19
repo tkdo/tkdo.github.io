@@ -58,7 +58,7 @@ nav:
     - Hive: data/hive.md 
   - 推荐: 
     - recommand/index.md
-    - [召回]TF-IDF: recommand/tfidf.md 
+    - 召回/TF-IDF: recommand/tfidf.md 
   - 搜索: 
     - search/index.md 
   - 工具: 
