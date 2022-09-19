@@ -55,7 +55,7 @@ nav:
     - Bash: language/bash.md 
   - 数据: 
     - data/index.md 
-    - Hive: data/index.md 
+    - Hive: data/hive.md 
   - 推荐: 
     - recommand/index.md
     - [召回]TF-IDF: recommand/tfidf.md 
