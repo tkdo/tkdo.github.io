@@ -52,13 +52,14 @@ nav:
     - 并查集: algorithm/find-union.md
   - 语言: 
     - language/index.md 
-    - Bash: language/bash.md 
+    - Bash: language/bash.md
+    - Tensorflow: language/tensorflow.md
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
   - 推荐: 
     - recommand/index.md
-    - 召回/TF-IDF: recommand/tfidf.md 
+    - 召回/TF-IDF: recommand/figure/tfidf.md 
   - 搜索: 
     - search/index.md 
   - 工具: 
