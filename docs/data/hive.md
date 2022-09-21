@@ -8,7 +8,8 @@
         regexp_replace(concat_ws(',', 
                        sort_array(
                        collect_list(
-                       concat_ws(':', ts, cast(item as string))))), 
+                       concat_ws(':', ts, 
+                       cast(item as string))))), 
                        '\\\\d+\:', '') seq
         ```
 
