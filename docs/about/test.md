@@ -32,3 +32,7 @@ $\boldsymbol u$ $\boldsymbol{a}$
     - 2
         - 3
             - 4
+
+
+??? note "标题"
+    内容
