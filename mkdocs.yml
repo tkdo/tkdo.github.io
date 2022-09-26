@@ -61,8 +61,8 @@ nav:
     - recommand/index.md
     - 召回/TF-IDF: recommand/figure/tfidf.md 
     - 排序/损失函数: recommand/rank/loss.md
-  - 搜索: 
-    - search/index.md 
+  #- 搜索: 
+  #  - search/index.md 
   - 工具: 
     - tools/index.md 
     - Git: tools/git.md 
