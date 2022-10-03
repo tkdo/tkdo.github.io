@@ -75,23 +75,21 @@ puts 'Hello world!'
 
 
 === "C"
-
     ```c
     #include<stdio.h>
 
     int main() {
-      printf("Hello World!\n");
-      return 0;
+        printf("Hello World!\n");
+        return 0;
     }
     ```
 === "C++"
-
     ```c++
     #include<iostream>
 
     int main() {
-      std::cout << "Hello World!" << std::endl;
-      return 0;
+        std::cout << "Hello World!" << std::endl;
+        return 0;
     }
     ```
 
