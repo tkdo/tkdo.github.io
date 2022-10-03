@@ -50,7 +50,7 @@ nav:
   - 算法: 
     - algorithm/index.md 
     - 并查集: algorithm/find-union.md
-    - 并查集: algorithm/dp.md
+    - 动态规划: algorithm/dp.md
   - 语言: 
     - language/index.md 
     - Bash: language/bash.md
