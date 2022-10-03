@@ -84,6 +84,6 @@ $L_{MLE}(P_n) = - log P_M(o|p_n)$
     - 第二个公式计算预测结果中每个item当做首个item的概率。
     - 第三个公式是前面两个概率分布的交叉熵。
 
-## 参考链接：
+## 参考链接
 - https://blog.csdn.net/qq_40859560/article/details/120676204
 - https://zhuanlan.zhihu.com/p/66514492
