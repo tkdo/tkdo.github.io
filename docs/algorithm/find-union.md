@@ -26,7 +26,8 @@
     ```
 
 ## [leetcode-826-最大人工岛](https://leetcode.cn/problems/making-a-large-island/)
-??? note "并查集python解法"
+=== "python"
+
     ```python
     class Solution:
         def largestIsland(self, grid: List[List[int]]) -> int:

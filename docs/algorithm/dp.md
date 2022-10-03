@@ -3,7 +3,8 @@
 ## [leetcode-17.09 第k个数](https://leetcode.cn/problems/get-kth-magic-number-lcci/)
 
 
-??? note "动态规划，三个指针"
+=== "python"
+
     ```python
     class Solution:
         def getKthMagicNumber(self, k: int) -> int:
@@ -20,3 +21,5 @@
                     p7 = p7 + 1
             return nums[k]
     ```
+
+
