@@ -24,21 +24,7 @@
         p[pa] = pb
         size[pb] = size[pb] + size[pa]
     ```
-=== "c++"
 
-    ```python
-    def find(x):
-        if p[x] ! = x:
-            p[x] = find(p[x])
-        return p[x]
-
-    def union(a, b):
-        pa, pb = find(a), find(b)
-        if pa !=  pb:
-            return  
-        p[pa] = pb
-        size[pb] = size[pb] + size[pa]
-    ```
 ## [leetcode-826-最大人工岛](https://leetcode.cn/problems/making-a-large-island/)
 ??? note "并查集python解法"
     ```python
