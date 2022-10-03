@@ -9,19 +9,36 @@
 - find(x) 函数用于查找x所在集合的祖宗节点。
 - union(a, b) 函数用于合并a和b所在集合。
 
-```python
-def find(x):
-    if p[x] ! = x:
-        p[x] = find(p[x])
-    return p[x]
+=== "python"
 
-def union(a, b):
-    pa, pb = find(a), find(b)
-    if pa !=  pb:
-        return  
-    p[pa] = pb
-    size[pb] = size[pb] + size[pa]
-```
+    ```python
+    def find(x):
+        if p[x] ! = x:
+            p[x] = find(p[x])
+        return p[x]
+
+    def union(a, b):
+        pa, pb = find(a), find(b)
+        if pa !=  pb:
+            return  
+        p[pa] = pb
+        size[pb] = size[pb] + size[pa]
+    ```
+=== "c++"
+
+    ```python
+    def find(x):
+        if p[x] ! = x:
+            p[x] = find(p[x])
+        return p[x]
+
+    def union(a, b):
+        pa, pb = find(a), find(b)
+        if pa !=  pb:
+            return  
+        p[pa] = pb
+        size[pb] = size[pb] + size[pa]
+    ```
 ## [leetcode-826-最大人工岛](https://leetcode.cn/problems/making-a-large-island/)
 ??? note "并查集python解法"
     ```python
