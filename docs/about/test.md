@@ -60,3 +60,39 @@ $\boldsymbol u$ $\boldsymbol{a}$
            [1, 2, 3, 4],
            [1, 2, 3, 4]], dtype=int32)>
     ```
+
+
+
+```javascript [group1-JavaScript]
+console.log('Hello world!')
+```
+```python [group1-Python]
+print('Hello world!')
+```
+```ruby [group1-Ruby]
+puts 'Hello world!'
+```
+
+
+=== "C"
+
+    ```c
+    #include<stdio.h>
+
+    int main() {
+      printf("Hello World!\n");
+      return 0;
+    }
+    ```
+=== "C++"
+
+    ```c++
+    #include<iostream>
+
+    int main() {
+      std::cout << "Hello World!" << std::endl;
+      return 0;
+    }
+    ```
+
+
