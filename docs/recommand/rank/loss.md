@@ -1,5 +1,5 @@
 # Listwise Loss
-## KL 散度loss
+## KL散度 loss
 - 分别对模型输出结构与label，进行softmax就可以分别得到rank_logits（也就是该item排在当前的位置的概率）与label_logits（也就是真实该item排在的位置的概率）
     ```python
     label_logits = tf.softmax(label)
