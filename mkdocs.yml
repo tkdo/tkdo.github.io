@@ -51,6 +51,7 @@ nav:
     - algorithm/index.md 
     - 并查集: algorithm/find-union.md
     - 动态规划: algorithm/dp.md
+    - 位运算: algorithm/bit.md
   - 语言: 
     - language/index.md 
     - Bash: language/bash.md
