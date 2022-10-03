@@ -62,35 +62,24 @@ $\boldsymbol u$ $\boldsymbol{a}$
     ```
 
 
-
-```javascript [group1-JavaScript]
-console.log('Hello world!')
-```
-```python [group1-Python]
-print('Hello world!')
-```
-```ruby [group1-Ruby]
-puts 'Hello world!'
-```
-
-
 === "C"
+
     ```c
     #include<stdio.h>
 
     int main() {
-        printf("Hello World!\n");
-        return 0;
+      printf("Hello World!\n");
+      return 0;
     }
     ```
+
 === "C++"
+
     ```c++
     #include<iostream>
 
     int main() {
-        std::cout << "Hello World!" << std::endl;
-        return 0;
+      std::cout << "Hello World!" << std::endl;
+      return 0;
     }
     ```
-
-
