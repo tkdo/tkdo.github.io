@@ -56,7 +56,7 @@ nav:
     - language/index.md 
     - Tensorflow: language/tensorflow.md
     - Bash: language/bash.md
-    - cplus: language/cplus.md
+    - C++: language/cplus.md
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
