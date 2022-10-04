@@ -54,8 +54,10 @@ nav:
     - 位运算: algorithm/bit.md
   - 语言: 
     - language/index.md 
-    - Bash: language/bash.md
     - Tensorflow: language/tensorflow.md
+    - Bash: language/bash.md
+    - c++: language/c++.md
+    
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
