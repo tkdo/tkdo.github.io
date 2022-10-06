@@ -147,7 +147,7 @@ cout <<endl;
   deque<int>d4(d3);
   printDeque(d4);
 ```
-#### 2.3. 赋值
+### 2.3. 赋值
 ```c++
   printDeque(d1);
   //operator=赋值
@@ -162,7 +162,7 @@ cout <<endl;
   d4.assign(10, 100);// 10个100
   printDeque(d4);
 ```
-#### 2.4. 容器大小
+### 2.4. 容器大小
 ```c++
   deque<int> d1;
   for (int i=0; i<10; i++)
@@ -188,7 +188,7 @@ cout <<endl;
   d1.resize(5);
   printDeque(d1);
 ```
-#### 2.5. 删除
+### 2.5. 删除
  * 两端操作
     * push_back(elem); //在容器尾部添加一个数据
     * push_front(elem); //在容器头部插入一个数据
@@ -251,7 +251,7 @@ cout <<endl;
   d1.clear();
   printDeque(d1);
 ```
-#### 2.6. 访问
+### 2.6. 访问
 ```c++
   deque<int> d;
   d.push_back(10);
