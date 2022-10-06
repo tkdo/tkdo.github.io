@@ -1,45 +1,40 @@
 
+## NERDTreeToggle
+- 打开目录树
+## 变量重命名
+- rn：在vim命令模式下，变量重名。
+## 代码格式化
+- f：在命令模式下，对代码进行格式化。
+## Gvimspector
+- 生成debug文件
+## debug
+- vscode
 
 
+
+
+
+
+
+
+
+
+
+
+<!-- 
  brew install neovim
-
-
-
  /Users/ss/.config/nvim
-
-
-
-
-
-
-
-
  coc
  brew install nodejs
  brew install yarn
 
-
-
-
-
 Vimspector unavailable: Requires Vim compiled with +python3
 pip3 install neovim
 
-
-
 Make -DCMAKE_COMMPILE_COMMMANDS=1 -B .vscode ./
 
-
 brew install ccls 
-
-
 bear -- make -j4 -C .. 
-
-
-
-
-
-
 sudo apt install nodejs
 sudo npm install -g yarn
 
@@ -67,5 +62,5 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 ```
-
+ -->
 
