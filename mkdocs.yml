@@ -52,6 +52,7 @@ nav:
     - 并查集: algorithm/find-union.md
     - 动态规划: algorithm/dp.md
     - 位运算: algorithm/bit.md
+    - 指针解法: algorithm/point.md
   - 语言: 
     - language/index.md 
     - Tensorflow: language/tensorflow.md
