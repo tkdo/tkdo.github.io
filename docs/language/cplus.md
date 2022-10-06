@@ -21,7 +21,9 @@ cout <<endl;
 * erase(const_iterator pos);//删除迭代器指向的元素
 * erase(const_iterator start, const_iterator end);//删除迭代器 start和end之间的元素
 * clear();//删除容器中所有的元素
+
 #### 1.2.1. 案例
+
 ```c++
  vector<int> v1;
   //尾插
@@ -48,8 +50,10 @@ cout <<endl;
   v1.erase(v1.begin(), v1.end());
   printVector(v1);
 ```
+
 ### 1.3. 遍历访问
 #### 1.3.1 案例
+
 ```c++
   vector<int> v1;
   for(int i=0; i<10; i++)
@@ -72,6 +76,7 @@ cout <<endl;
 ```
 ### 1.4. swap 交换 
 #### 1.4.1 案例
+
 ```c++
   vector<int> v1;
   for(int i=0; i<10; i++)
@@ -93,6 +98,7 @@ cout <<endl;
   printVector(v2);
 ```
 #### 1.4.1 巧用swap释放内存
+
 ```c++
   vector<int> v;
   for (int i=0; i<100000; i++)
@@ -114,6 +120,7 @@ cout <<endl;
 
 ## 2. Deque 容器
 ### 2.1. 打印
+
 ```c++
 void printDeque(const deque<int> &d)
 {
@@ -126,6 +133,7 @@ for(deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
 cout <<endl;
 }
 ```
+
 ### 2.2. 构造函数
 #### 2.2.1. 构造函数
  * deque<T>  deqT; //默认构造形式
@@ -133,6 +141,7 @@ cout <<endl;
  * deque(n, elem); //构造函数将n个elem拷贝给本身
  * deque(const deque, &deq); //拷贝构造函数
 #### 2.2.2. 代码样例
+
 ```c++
   deque<int> d1;
   for(int i=0; i<10; i++)
@@ -147,7 +156,9 @@ cout <<endl;
   deque<int>d4(d3);
   printDeque(d4);
 ```
+
 ### 2.3. 赋值
+
 ```c++
   printDeque(d1);
   //operator=赋值
@@ -162,7 +173,9 @@ cout <<endl;
   d4.assign(10, 100);// 10个100
   printDeque(d4);
 ```
+
 ### 2.4. 容器大小
+
 ```c++
   deque<int> d1;
   for (int i=0; i<10; i++)
@@ -188,12 +201,14 @@ cout <<endl;
   d1.resize(5);
   printDeque(d1);
 ```
+
 ### 2.5. 删除
  * 两端操作
     * push_back(elem); //在容器尾部添加一个数据
     * push_front(elem); //在容器头部插入一个数据
     * pop_back(); //删除容器最后一个数据
     * pop_front();  //删除 容器第一个元素
+
 ```c++
   deque<int> d1;
   // 尾插
@@ -224,6 +239,7 @@ cout <<endl;
   d1.insert(d1.begin(), d2.begin(), d2.end());
   printDeque(d1);
 ```
+
  * 指定位置操作
     * insert(pos, elem); //在pos位置插入一个elem元素的拷贝，返回新数据的位置
     * insert(pos, n, elem); //在pos位置插入n个elem数据，无返回值
@@ -231,6 +247,7 @@ cout <<endl;
     * clear(); //清空容器的所有数据
     * erase(beg, end); //删除[beg, end)区间的数据，返回下一个数据的位置
     * erase(pos); //删除pos位置的数据，返回下一个数据的位置
+
 ```c++
   deque<int> d1;
   // 尾插
@@ -251,7 +268,9 @@ cout <<endl;
   d1.clear();
   printDeque(d1);
 ```
+
 ### 2.6. 访问
+
 ```c++
   deque<int> d;
   d.push_back(10);
@@ -275,7 +294,9 @@ cout <<endl;
   cout << "第一个元素为：" << d.front() << endl;
   cout << "最后一个素为：" << d.back() << endl;
 ```
+
 ##  3. 排序(algorithm)
+
 ```c++
   deque<int> d;
   d.push_back(10);
@@ -291,6 +312,7 @@ cout <<endl;
   sort(d.begin(), d.end());
   printDeque(d);
 ```
+
 
 
 
