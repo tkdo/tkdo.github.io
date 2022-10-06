@@ -1,5 +1,5 @@
 
-##  [leetcode-927-三等分 ](https://leetcode.cn/problems/three-equal-parts/)
+##  [leetcode-927-三等分](https://leetcode.cn/problems/three-equal-parts/)
     给定一个由 0 和 1 组成的数组arr，将数组分成 3个非空的部分 ，使得所有这些部分表示相同的二进制值。
     如果可以做到，请返回任何[i, j]，其中 i+1 < j，这样一来：
     arr[0], arr[1], ..., arr[i]为第一部分；
@@ -24,3 +24,42 @@
     提示：
     3 <= arr.length <= 3 * 104
     arr[i]是0或1
+
+=== "python"
+
+    ```python
+    class Solution:
+        def threeEqualParts(self, arr: List[int]) -> List[int]:
+            def find(x):
+                s = 0
+                for i, a in enumerate(arr):
+                    s = s + a
+                    if s == x:
+                        return i
+
+            n = len(arr)
+            cnt, mod = divmod(sum(arr), 3)
+            if mod > 0:
+                return [-1, -1] # 如果1的总数不够整除直接返回false
+            if cnt == 0:
+                return [0, n-1] # 如果cnt为0，说明整个数组全部为0
+            # 分成3段，分别找到第一二三段的第一个1，i、j、k分别指向它们
+            i, j, k = find(1), find(cnt + 1), find(2*cnt + 1)
+            while k < n and arr[i] == arr[j] == arr[k]:
+                i = i + 1
+                j = j + 1
+                k = k + 1
+            return [i-1, j] if k == n else [-1, -1]
+    ```
+
+
+① i、j、k分别指向三段中第1个1
+
+    0 1 1 0 0| 0 1 1 0 0 0| 0 0 1 1 0 0
+      ^          ^              ^
+      i          j              k
+② i、j、k跳出循环
+
+    0 1 1 0 0| 0 1 1 0 0 0| 0 0 1 1 0 0
+               ^         ^             ^
+               i         j             k
