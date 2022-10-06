@@ -7,7 +7,7 @@
 - f：在命令模式下，对代码进行格式化。
 ## Gvimspector
 - 生成debug文件
-## debug
+## debug快捷键
 - vscode
 
       | Key             | Mapping                                 | Function
