@@ -10,6 +10,20 @@
 ## debug
 - vscode
 
+      | Key             | Mapping                                 | Function
+      | ---             | ---                                     | ---
+      | `F5`            | `<Plug>VimspectorContinue`              | When debugging, continue. Otherwise start debugging.
+      | `Shift F5`      | `<Plug>VimspectorStop`                  | Stop debugging.
+      | `Ctrl Shift F5` | `<Plug>VimspectorRestart`               | Restart debugging with the same configuration.
+      | `F6`            | `<Plug>VimspectorPause`                 | Pause debuggee.
+      | `F8`            | `<Plug>VimspectorJumpToNextBreakpoint`  | Jump to next breakpoint in the current file.
+      | `Shift F8`      | `<Plug>VimspectorJumpToPreviousBreakpoint` | Jump to previous breakpoint in the current file.
+      | `F9`            | `<Plug>VimspectorToggleBreakpoint`      | Toggle line breakpoint on the current line.
+      | `Shift F9`      | `<Plug>VimspectorAddFunctionBreakpoint` | Add a function breakpoint for the expression under cursor
+      | `F10`           | `<Plug>VimspectorStepOver`              | Step Over
+      | `F11`           | `<Plug>VimspectorStepInto`              | Step Into
+      | `Shift F11`     | `<Plug>VimspectorStepOut`               | Step out of current function scope
+
 
 
 
