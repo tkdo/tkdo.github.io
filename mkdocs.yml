@@ -58,6 +58,7 @@ nav:
     - Tensorflow: language/tensorflow.md
     - Bash: language/bash.md
     - C++: language/cplus.md
+    - JAVA: language/java.md
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
@@ -73,13 +74,13 @@ nav:
     - 高效搜索: tools/search.md  
     - nvim工具: tools/nvim.md  
     - markdown: tools/markdown.md
+    - vscode: tools/vscode.md
   - 关于:
     - about/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
     - 支持作者: about/support.md
     - 文章编写帮助: about/help.md
     - 网站构建: about/build.md
     - 测试文档: about/test.md
-
     
 # [Extensions]
 plugins:

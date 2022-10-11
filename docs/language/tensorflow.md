@@ -1,4 +1,10 @@
 
+# 禁用tf使用gpu
+```bash
+#设置环境变量
+CUDA_VISIBLE_DEVICES=-1
+```
+
 # 常用函数
 - tf.matmul
     - shape的变幻，例如：(1, 1, 64) (1, 64, 1) = (1, 1, 1)
