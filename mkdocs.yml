@@ -58,8 +58,8 @@ nav:
     - Tensorflow: language/tensorflow.md
     - Bash: language/bash.md
     - C++: language/cplus.md
-    - JAVA: language/java.md
-    - JAVA: language/python.md
+    - Java: language/java.md
+    - Python: language/python.md
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
