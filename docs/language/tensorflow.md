@@ -2,7 +2,12 @@
 # 禁用tf使用gpu
 ```bash
 #设置环境变量
-CUDA_VISIBLE_DEVICES=-1
+export CUDA_VISIBLE_DEVICES=-1
+```
+```python
+import os
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"    
+import tensorflow as tf
 ```
 
 # 常用函数

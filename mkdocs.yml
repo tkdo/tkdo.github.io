@@ -59,6 +59,7 @@ nav:
     - Bash: language/bash.md
     - C++: language/cplus.md
     - JAVA: language/java.md
+    - JAVA: language/python.md
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
@@ -66,6 +67,7 @@ nav:
     - recommand/index.md
     #- 召回/TF-IDF: recommand/figure/tfidf.md 
     - 排序/损失函数: recommand/rank/loss.md
+    - 评估/cosine: recommannd/metircs/cosine.md
   #- 搜索: 
   #  - search/index.md 
   - 工具: 
