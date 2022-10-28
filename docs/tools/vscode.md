@@ -1,3 +1,6 @@
+## vscode服务版本
+- https://vscode.dev/
+
 ## 常用皮肤插件
 - Shades of Purple
 - Noctis
