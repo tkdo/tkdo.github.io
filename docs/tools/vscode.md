@@ -22,3 +22,12 @@
     ]
 }
 ```
+
+
+##  配置Java-Vscode
+- log cannot be resolved
+```
+1) install: Lombok Annotations Support for VS Code
+2) relead : view -> command platten -> Java：clean java language server workspace
+```
+
