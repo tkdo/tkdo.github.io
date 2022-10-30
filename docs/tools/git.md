@@ -27,7 +27,7 @@
     ```bash
     git reset --hard 17336756 <commit_id>
     ```
-## 查看diff
+## 查看代码差异
 - 显示出branch1和branch2中差异的部分
     ```bash 
     git diff branch1 branch2 --stat
