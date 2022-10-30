@@ -15,13 +15,13 @@ set hive.exec.dynamic.partition.mode=nonstrict;
     - ② collect_list 把组装后的字符串收集到list中。
     - ③ sort_array 把array变成有序。
     - ④ regexp_replace 把时间戳剃掉。
-        ```sql
-        regexp_replace(concat_ws(',', 
-                       sort_array(
-                       collect_list(
-                       concat_ws(':', ts, 
-                       cast(item as string))))), 
-                       '\\\\d+\:', '') seq
-        ```
+```sql
+regexp_replace(concat_ws(',', 
+                sort_array(
+                collect_list(
+                concat_ws(':', ts, 
+                cast(item as string))))), 
+                '\\\\d+\:', '') seq
+```
 
 
