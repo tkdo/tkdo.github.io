@@ -55,11 +55,11 @@ nav:
     - 指针解法: algorithm/point.md
   - 语言: 
     - language/index.md 
-    - Tensorflow: language/tensorflow.md
     - Bash: language/bash.md
     - C++: language/cplus.md
     - Java: language/java.md
     - Python: language/python.md
+    - Tensorflow: language/tensorflow.md
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
