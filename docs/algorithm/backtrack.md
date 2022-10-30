@@ -11,42 +11,41 @@
 
 
 === "python"
-```python
-class Solution:
-    def letterCasePermutation(self, s: str) -> List[str]:
-        ans = []
-        def dfs(s: List[str], pos: int) -> None:
-            while pos < len(s) and s[pos].isdigit():
-                pos += 1
-            if pos == len(s):
-                ans.append(''.join(s))
-                return
-            dfs(s, pos + 1)
-            s[pos] = s[pos].swapcase()
-            dfs(s, pos + 1)
-            s[pos] = s[pos].swapcase()
-        dfs(list(s), 0)
-        return ans
-```
+    ```python
+    class Solution:
+        def letterCasePermutation(self, s: str) -> List[str]:
+            ans = []
+            def dfs(s: List[str], pos: int) -> None:
+                while pos < len(s) and s[pos].isdigit():
+                    pos += 1
+                if pos == len(s):
+                    ans.append(''.join(s))
+                    return
+                dfs(s, pos + 1)
+                s[pos] = s[pos].swapcase()
+                dfs(s, pos + 1)
+                s[pos] = s[pos].swapcase()
+            dfs(list(s), 0)
+            return ans
+    ```
 === "c++"
-```c++
-class Solution {
-public:
-    vector<string> ans;
-    void dfs (string a, int s) {
-        ans.push_back(a);
-        for (int i = s; i < a.size(); i ++ ) {
-            if (!isdigit(a[i])) {
-                a[i] ^= 32;
-                dfs (a, i + 1);
-                a[i] ^= 32;
+    ```c++
+    class Solution {
+    public:
+        vector<string> ans;
+        void dfs (string a, int s) {
+            ans.push_back(a);
+            for (int i = s; i < a.size(); i ++ ) {
+                if (!isdigit(a[i])) {
+                    a[i] ^= 32;
+                    dfs (a, i + 1);
+                    a[i] ^= 32;
+                }
             }
         }
-    }
-    vector<string> letterCasePermutation(string s) {
-        dfs (s, 0);
-        return ans;
-    }
-};
-```
-
+        vector<string> letterCasePermutation(string s) {
+            dfs (s, 0);
+            return ans;
+        }
+    };
+    ```
