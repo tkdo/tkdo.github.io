@@ -55,6 +55,7 @@ nav:
     - 位运算: algorithm/bit.md
     - 指针解法: algorithm/point.md
     - 回溯解法: algorithm/backtrack.md
+    - 二分法: algorithm/binary.md
   - 语言: 
     - language/index.md 
     - Bash: language/bash.md
