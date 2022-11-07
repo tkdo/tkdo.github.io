@@ -81,6 +81,7 @@ nav:
     - nvim工具: tools/nvim.md  
     - markdown: tools/markdown.md
     - vscode: tools/vscode.md
+    - conda: tools/anaconda.md
   - 关于:
     - about/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
     - 支持作者: about/support.md
