@@ -66,6 +66,7 @@ nav:
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
+    - Spark: data/spark.md
   - 推荐: 
     - recommand/index.md
     #- 召回/TF-IDF: recommand/figure/tfidf.md 
