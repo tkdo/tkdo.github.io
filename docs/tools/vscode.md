@@ -4,7 +4,15 @@
 ## 常用皮肤插件
 - Shades of Purple
 - Noctis
-## 配置launch.json
+
+## 配置python-vscode
+- setting.json
+```json
+{
+"python.pythonPath": "/path/to/python"
+}
+```
+- launch.json
 ```json
 {
     // Use IntelliSense to learn about possible attributes.
