@@ -1,5 +1,10 @@
 
-# 禁用tf使用gpu
+## 打印签名
+```bash
+saved_model_cli show --dir export/1524906774 --tag_set serve --signature_def serving_default
+```
+
+## 禁用tf使用gpu
 ```bash
 #设置环境变量
 export CUDA_VISIBLE_DEVICES=-1
@@ -10,7 +15,7 @@ os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 import tensorflow as tf
 ```
 
-# 常用函数
+## 常用函数
 - tf.matmul
     - shape的变幻，例如：(1, 1, 64) (1, 64, 1) = (1, 1, 1)
     ```python
