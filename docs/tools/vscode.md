@@ -38,8 +38,7 @@
 ##  配置Java-Vscode
 - debug插件
 ```
-① Java Debugger
-② Java Extension Pack
+Java Extension Pack
 ```
 
 - log cannot be resolved
