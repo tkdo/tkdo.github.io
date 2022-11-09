@@ -4,6 +4,20 @@
 saved_model_cli show --dir export/1524906774 --tag_set serve --signature_def serving_default
 ```
 
+
+## tensorflow读取hdfs错误
+```bash
+loadFileSystems error:
+(unable to get stack trace for java.lang.NoClassDefFoundError exception: ExceptionUtils::getStackTrace error.)
+hdfsBuilderConnect(forceNewInstance=0, nn=default, port=0, kerbTicketCachePath=(NULL), userName=(NULL)) error:
+(unable to get stack trace for java.lang.NoClassDefFoundError exception: ExceptionUtils::getStackTrace error.)
+```
+```
+export CLASSPATH=${HADOOP_HOME}/etc/hadoop:`find ${HADOOP_HOME}/share/hadoop/ | awk '{path=path":"$0}END{print path}'`
+export LD_LIBRARY_PATH="${HADOOP_HOME}/lib/native":$LD_LIBRARY_PATH
+```
+
+
 ## 禁用tf使用gpu
 ```bash
 #设置环境变量
