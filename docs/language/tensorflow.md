@@ -1,4 +1,14 @@
 
+
+## concat报错定位
+- 问题
+```python
+  (0) Invalid argument: ConcatOp : Dimensions of inputs should match: shape[0] = [10240,4] vs. shape[37] = [10236,106]
+  (1) Invalid argument: ConcatOp : Dimensions of inputs should match: shape[0] = [10240,4] vs. shape[37] = [10236,106]
+```
+- 方案：
+concat时候报错，某一个特征为Bx106，找到这个特征去掉
+
 ## 打印签名
 ```bash
 saved_model_cli show --dir export/1524906774 --tag_set serve --signature_def serving_default
