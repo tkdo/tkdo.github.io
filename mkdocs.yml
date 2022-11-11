@@ -56,6 +56,7 @@ nav:
     - 指针解法: algorithm/point.md
     - 回溯解法: algorithm/backtrack.md
     - 二分法: algorithm/binary.md
+    - 前缀和: algorithm/prefix-sum.md
   - 语言: 
     - language/index.md 
     - Bash: language/bash.md
