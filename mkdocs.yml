@@ -61,6 +61,7 @@ nav:
     - language/index.md 
     - Bash: language/bash.md
     - C++: language/cplus.md
+    - English: language/english.md 
     - Java: language/java.md
     - Python: language/python.md
     - Tensorflow: language/tensorflow.md
