@@ -20,31 +20,32 @@
     1 <= nums[i] <= 10^5
 
 
+=== "python"
 
-
-    class Solution:
-        def minSubArrayLen(self, target: int, nums: List[int]) -> int:
-            n = len(nums)
-            ans = n + 10
-            prefixSum = [0] * (n + 10)
-            for i in range(1, n+1):
-                #print(i, nums[i-1])
-                prefixSum[i] = prefixSum[i-1] + nums[i-1]
-            #print(prefixSum)
-            for i  in range(1, n+1):
-                s = prefixSum[i]
-                d = s - target
-                l = 0
-                r = i
-                while l < r:
-                    mid = (l + r + 1) >> 1
-                    if prefixSum[mid] <= d: 
-                        l = mid
-                    else:
-                        r = mid -1
-                if prefixSum[r] <= d:
-                    ans = min(ans, i-r)
-            return 0 if ans == n + 10 else ans
-
+    ```python
+        class Solution:
+            def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+                n = len(nums)
+                ans = n + 10
+                prefixSum = [0] * (n + 10)
+                for i in range(1, n+1):
+                    #print(i, nums[i-1])
+                    prefixSum[i] = prefixSum[i-1] + nums[i-1]
+                #print(prefixSum)
+                for i  in range(1, n+1):
+                    s = prefixSum[i]
+                    d = s - target
+                    l = 0
+                    r = i
+                    while l < r:
+                        mid = (l + r + 1) >> 1
+                        if prefixSum[mid] <= d: 
+                            l = mid
+                        else:
+                            r = mid -1
+                    if prefixSum[r] <= d:
+                        ans = min(ans, i-r)
+                return 0 if ans == n + 10 else ans
+    ```
 
 
