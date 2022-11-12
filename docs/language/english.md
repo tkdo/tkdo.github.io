@@ -14,7 +14,7 @@
     - astrophysicist 研究星星身体的人 >> 天梯物理学家
     - He was an astrophysicist for NASA.
 
-## physi 自然的，身体的
+### physi 自然的，身体的
 - physician n 医生，(尤指)内科医生
     - physi 自然，身体
     - cian 构成名字；从事...的人
