@@ -119,3 +119,35 @@
                         ans = max(ans, lengths[i] * lengths[j])
             return ans
     ```
+    ```c++
+    class Solution {
+    public:
+        int maxProduct(vector<string>& words) {
+            //使用位运算来实现hash
+            int lenghts[words.size()];
+            int hashs[words.size()];
+            memset(lenghts,0,sizeof(lenghts));
+            memset(hashs,0,sizeof(hashs));//给数组用0进行初始化
+            int ans = 0;
+            for(int i=0; i <words.size(); i++)
+            {
+                lenghts[i]  = words[i].size();
+                for(auto c : words[i])
+                {
+                    cout << c <<endl;
+                    //hashs[i] = hashs[i] | 1 << c - 'a';
+                    hashs[i] |= (1 << (c - 'a')); //为了保证计算优先级多用括号括下
+                    //cout << hashs[i] <<endl;
+                }
+                for(int j=0; j<i; j++){
+                    if((hashs[i] & hashs[j]) == 0) //字符计算优先级
+                    {
+                        ans = max(ans, lenghts[i]*lenghts[j]);
+                        //cout << i<<j << endl;
+                    } 
+                }
+            }
+            return ans;
+        }
+    };
+    ```
