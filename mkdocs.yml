@@ -49,7 +49,6 @@ extra:
 nav:
   - 算法: 
     - algorithm/index.md 
-    - 异或运算: algorithm/xor.md
     - 并查集: algorithm/find-union.md
     - 动态规划: algorithm/dp.md
     - 位运算: algorithm/bit.md
@@ -57,6 +56,8 @@ nav:
     - 回溯解法: algorithm/backtrack.md
     - 二分法: algorithm/binary.md
     - 前缀和: algorithm/prefix-sum.md
+    - 排序: algorithm/sort.md
+
   - 语言: 
     - language/index.md 
     - Bash: language/bash.md
