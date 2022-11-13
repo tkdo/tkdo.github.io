@@ -1,6 +1,6 @@
 
 
-##  [leetcode-OfferII008 和大于等于target的最短子数组](https://leetcode.cn/problems/2VG8Kg/)
+##  [OfferII008 和大于等于target的最短子数组](https://leetcode.cn/problems/2VG8Kg/)
 
     给定一个含有n个正整数的数组和一个正整数 target 。
     找出该数组中满足其和 ≥ target 的长度最小的 连续子数组$[nums_l, nums_{l+1}, ..., nums_{r-1}, nums_r]$ ，并返回其长度。如果不存在符合条件的子数组，返回 0 。
