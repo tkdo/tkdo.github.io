@@ -119,6 +119,8 @@
                         ans = max(ans, lengths[i] * lengths[j])
             return ans
     ```
+=== "c++"
+
     ```c++
     class Solution {
     public:
