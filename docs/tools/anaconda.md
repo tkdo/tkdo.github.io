@@ -11,7 +11,7 @@ alias python="$ANACONDA_HOME/bin/python"
 
 ## conda虚拟环境相关问题
 ### 1. 创建虚拟环境
-conda create -n env-py36-t15 python=3.6.2
+conda create -n env-py36-t15 python=3.6.5
 
 ### 2. 把ipykernel安装到虚拟环境中
 conda install -n env-py36-t15  ipykernel
