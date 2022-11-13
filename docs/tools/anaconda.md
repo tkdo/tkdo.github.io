@@ -10,14 +10,16 @@ alias python="$ANACONDA_HOME/bin/python"
 ```
 
 ## conda虚拟环境相关问题
-### 1. 创建虚拟环境
-conda create -n env-py36-t15 python=3.6.5
+###  创建虚拟环境
+conda create -n env-py37-t15 python=3.7.6
+###  删除虚拟环境
+conda remove -n env-py37-t15 --all 
 
 ### 2. 把ipykernel安装到虚拟环境中
-conda install -n env-py36-t15  tensorflow==1.15
+conda install -n env-py37-t15  tensorflow==1.15
 
 ### 3. 开启虚拟环境
-conda activate env-py36-t15
+conda activate env-py37-t15
 
 ### 4. 关闭虚拟环境
 conda deactivate
