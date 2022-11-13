@@ -1,5 +1,3 @@
-
-
 ## conda资源包地址
 https://repo.anaconda.com/archive/
 
@@ -12,18 +10,21 @@ alias python="$ANACONDA_HOME/bin/python"
 ```
 
 ## conda虚拟环境相关问题
-### 1. 把ipykernel安装到虚拟环境中
-conda install -n env-py37-tf20  ipykernel
+### 1. 创建虚拟环境
+conda create -n env-py36-t15 python=3.6.2
 
-### 2. 开启虚拟环境
-conda activate env-py37-tf20
+### 2. 把ipykernel安装到虚拟环境中
+conda install -n env-py36-t15  ipykernel
 
-### 3. 关闭虚拟环境
+### 3. 开启虚拟环境
+conda activate env-py36-t15
+
+### 4. 关闭虚拟环境
 conda deactivate
 
-### 4. 搜索conda可用的package
+### 5. 搜索conda可用的package
 (base) ssdeMacBook-Pro:~ ss$ anaconda search -t conda xgboost
-### 5. conda安装package
+### 6. conda安装package
 (base) ssdeMacBook-Pro:~ ss$ conda install -c anaconda py-xgboost
 
 
