@@ -1,5 +1,15 @@
+
+
 ## conda资源包地址
 https://repo.anaconda.com/archive/
+
+## 设置conda环境变量
+```bash
+# 设置anaconda3环境配置
+export ANACONDA_HOME=/root/pangu/env/anaconda3
+export PATH="$ANACONDA_HOME/bin:$PATH"
+alias python="$ANACONDA_HOME/bin/python"
+```
 
 ## conda虚拟环境相关问题
 ### 1. 把ipykernel安装到虚拟环境中
