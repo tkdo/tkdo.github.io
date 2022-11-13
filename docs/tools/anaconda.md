@@ -14,7 +14,7 @@ alias python="$ANACONDA_HOME/bin/python"
 conda create -n env-py36-t15 python=3.6.5
 
 ### 2. 把ipykernel安装到虚拟环境中
-conda install -n env-py36-t15  tensorflow==1.1.5
+conda install -n env-py36-t15  tensorflow==1.15
 
 ### 3. 开启虚拟环境
 conda activate env-py36-t15
