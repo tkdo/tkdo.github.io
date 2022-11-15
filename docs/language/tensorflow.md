@@ -94,6 +94,7 @@ import tensorflow as tf
            [1, 2, 3, 4]], dtype=int32)>
     ```
 - tf.gather
+    - 根据indices取tensor
     ```python
     >>> import tensorflow as tf            
     >>> tf.enable_eager_execution()
