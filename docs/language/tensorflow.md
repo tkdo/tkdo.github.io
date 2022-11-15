@@ -97,21 +97,46 @@ import tensorflow as tf
     ```python
     >>> import tensorflow as tf            
     >>> tf.enable_eager_execution()
-    >>> params = tf.constant([[0, 1.0, 2.0],
-    ...                       [10.0, 11.0, 12.0],
-    ...                       [20.0, 21.0, 22.0],
-    ...                       [30.0, 31.0, 32.0]])
-    >>> params
-    <tf.Tensor: id=0, shape=(4, 3), dtype=float32, numpy=
-    array([[ 0.,  1.,  2.],
-        [10., 11., 12.],
-        [20., 21., 22.],
-        [30., 31., 32.]], dtype=float32)>
-    >>> tf.gather(params, indices=[1,2]).numpy()
-    array([[10., 11., 12.],
-        [20., 21., 22.]], dtype=float32)
-    >>> tf.gather(params, indices=[0,1]).numpy()
-    array([[ 0.,  1.,  2.],
-        [10., 11., 12.]], dtype=float32)
+    >>> params = tf.constant([
+    ...     [[1,1],[2,2],[3,3],[4,4],[5,5]], 
+    ...     [[1,1],[2,2],[3,3],[4,4],[5,5]], 
+    ...     [[1,1],[2,2],[3,3],[4,4],[5,5]]])
+    >>> tf.gather(params, indices=[0,1], axis=0)
+    <tf.Tensor: id=47, shape=(2, 5, 2), dtype=int32, numpy=
+    array([[[1, 1],
+            [2, 2],
+            [3, 3],
+            [4, 4],
+            [5, 5]],
+        [[1, 1],
+            [2, 2],
+            [3, 3],
+            [4, 4],
+            [5, 5]]], dtype=int32)>
+    >>> tf.gather(params, indices=[0,1], axis=1)
+    <tf.Tensor: id=51, shape=(3, 2, 2), dtype=int32, numpy=
+    array([[[1, 1],
+            [2, 2]],
+        [[1, 1],
+            [2, 2]],
+        [[1, 1],
+            [2, 2]]], dtype=int32)>
+    >>> tf.gather(params, indices=[0,1], axis=2)
+    <tf.Tensor: id=57, shape=(3, 5, 2), dtype=int32, numpy=
+    array([[[1, 1],
+            [2, 2],
+            [3, 3],
+            [4, 4],
+            [5, 5]],
+        [[1, 1],
+            [2, 2],
+            [3, 3],
+            [4, 4],
+            [5, 5]],
+        [[1, 1],
+            [2, 2],
+            [3, 3],
+            [4, 4],
+            [5, 5]]], dtype=int32)>
     >>> 
     ```
