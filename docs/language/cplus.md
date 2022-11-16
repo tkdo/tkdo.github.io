@@ -1,3 +1,27 @@
+
+
+# vector 排序
+```c++
+sort(boxTypes.begin(), boxTypes.end(), [](const vector<int> &a, const vector<int> &b) {
+    return a[1] > b[1];
+});
+```
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##  1. vector容器
 
 ### 1.1. 打印
