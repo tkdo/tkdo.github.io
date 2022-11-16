@@ -57,6 +57,7 @@ nav:
     - 二分法: algorithm/binary.md
     - 前缀和: algorithm/prefix-sum.md
     - 排序: algorithm/sort.md
+    - 归纳法: algorithm/summary.md
 
   - 语言: 
     - language/index.md 
