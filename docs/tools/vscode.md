@@ -2,8 +2,9 @@
 - https://vscode.dev/
 
 ## 常用皮肤插件
-- Shades of Purple
 - Noctis
+- Snazzy Operator
+
 
 ## 配置python-vscode
 - setting.json
