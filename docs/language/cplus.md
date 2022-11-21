@@ -6,6 +6,10 @@ sort(boxTypes.begin(), boxTypes.end(), [](const vector<int> &a, const vector<int
     return a[1] > b[1];
 });
 ```
+# vector 累加
+```c++
+int total =  accumulate(nums.begin(), nums.end(), 0);
+```
 
       
 
