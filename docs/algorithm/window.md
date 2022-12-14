@@ -1,4 +1,5 @@
-![Offer-II-009 乘积小于 K 的子数组](https://leetcode.cn/problems/ZVAVXX/)
+[Offer-II-009 乘积小于 K 的子数组](https://leetcode.cn/problems/ZVAVXX/)
+
     给定一个正整数数组nums和整数 k，请找出该数组内乘积小于k的连续的子数组的个数。
     示例 1:
     输入: nums = [10,5,2,6], k = 100
