@@ -1,4 +1,6 @@
 
+# to_string(123) // int转成string
+# stoi("123") // string转成int
 
 # vector 排序
 ```c++
