@@ -1,3 +1,13 @@
+# shell使用map教程
+```bash
+declare -A modelMap        #声明1个map
+modelMap["a"]="b"          #添加kv结构
+modelName=${modelMap["a"]} #通过key获取value
+```
+# sed替换配置文件
+```bash
+sed -i "s/model:.*/model: ${modelName}/g"   configs/a.yaml
+```
 
 # 常用命令
 ## 1. 修改linux提示
