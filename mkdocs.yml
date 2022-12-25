@@ -64,6 +64,7 @@ nav:
     - language/index.md 
     - Bash: language/bash.md
     - C++: language/cplus.md
+    - Chinese: language/chinese.md
     - English: language/english.md 
     - Java: language/java.md
     - Python: language/python.md
