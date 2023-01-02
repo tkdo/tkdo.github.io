@@ -1,4 +1,4 @@
-## 删除分支
+## 1. 删除分支
 - 删除本地分支
     ```shell 
     git branch -d localBranchName
@@ -7,7 +7,7 @@
     ```shell
     git push origin --delete   remotes/origin/remoteBranchName
     ```
-## 保存用户名密码
+## 2. 保存用户名密码
 - 设置记住密码（默认15分钟）：
     ```bash
     git config --global credential.helper cache
@@ -22,12 +22,12 @@
     git config --global credential.helper store
     git config credential.helper store
     ```
-##  本地代码回滚
+## 3. 本地代码回滚
 - 本地回滚
     ```bash
     git reset --hard 17336756 <commit_id>
     ```
-## 查看代码差异
+## 4. 查看代码差异
 - 显示出branch1和branch2中差异的部分
     ```bash 
     git diff branch1 branch2 --stat
@@ -58,10 +58,10 @@
     git log -lefg-right branch1...branch2
     # 注意 commit 后面的箭头，根据我们在 –left-right branch1…branch2 的顺序，左箭头 < 表示是 branch1 的，右箭头 > 表示是branch2的。
     ```
-## tag用法
-### 1.1 创建标签
+## 5. tag用法
+### 5.1 创建标签
 - 附注标签
-    -  git tag -a \<tagname\> -m \<commit\> 
+    -  git tag -a <tagname\> -m \<commit\> 
     - 最简单的方式是当你在运行 tag 命令时指定 -a 选项
     -  案例：
         ```bash
@@ -72,7 +72,7 @@
         v1.4
         ```
 - 轻量标签
-    -  git tag \<tagname\> -m \<commit\> 
+    -  git tag <tagname\> -m \<commit\> 
     -  轻量标签本质上是将提交校验和存储到一个文件中——没有保存任何其他信息。 创建轻量标签，不需要使用 -a、-s 或 -m 选项，只需要提供标签名字
     - 案例：
         ```bash
@@ -85,7 +85,7 @@
         v1.5
         ```
 -   标签diff
-    - git show \<tagname\>
+    - git show <tagname\>
     -  如果在标签上运行 git show，你不会看到额外的标签信息。 命令只会显示出提交信息：
     - 案例：
         ```bash
@@ -94,8 +94,8 @@
         Date:   Mon Mar 17 21:52:11 2008 -0700
             changed the version number
         ```
-### 1.2 共享标签
-- git push origin \<tagname\>
+### 5.2 共享标签
+- git push origin <tagname\>
     - 在创建完标签后你必须显式地推送标签到共享服务器上。
     - 案例：
         ```bash
@@ -120,8 +120,8 @@
         * [new tag]         v1.4 -> v1.4
         * [new tag]         v1.4-lw -> v1.4-lw
         ```
-### 1.3 删除标签
-- git tag -d \<tagname\>
+### 5.3 删除标签
+- git tag -d <tagname\>
     - 要删除掉你本地仓库上的标签.
     - 案例：可以使用以下命令删除一个轻量标签
         ```bash
@@ -131,8 +131,8 @@
 - git push origin --delete <tagname>
     -  要删除掉你远程仓库上的标签
 
-### 1.4 删除标签
-- git checkout \<tagname\>
+### 5.4 删除标签
+- git checkout <tagname\>
     - 虽然这会使你的仓库处于“分离头指针（detached HEAD）”的状态——这个状态有些不好的副作用：
     - 案例：
         ```
@@ -155,7 +155,7 @@
         HEAD is now at df3f601... add atlas.json and cover image
         ```
     - 在“分离头指针”状态下，如果你做了某些更改然后提交它们，标签不会发生变化， 但你的新提交将不属于任何分支，并且将无法访问，除非通过确切的提交哈希才能访问。 因此，如果你需要进行更改，比如你要修复旧版本中的错误，那么通常需要创建一个新分支。
-- git checkout -b \<branchname\> \<tagname\>
+- git checkout -b <branchname\> <tagname\>
     - 如果在这之后又进行了一次提交，version2 分支就会因为这个改动向前移动， 此时它就会和 v2.0.0 标签稍微有些不同，这时就要当心了。
 
 
