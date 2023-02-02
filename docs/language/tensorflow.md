@@ -1,4 +1,22 @@
 
+## 替换tensor内部的值
+- 方案：
+    ```
+    input = tf.constant([[3],[3],[5],[5],[7],[7],[9],[9]])
+    filter357 = tf.logical_or(tf.logical_or(tf.equal(input, 3), tf.equal(input, 5)), tf.equal(input, 7))
+
+    r0 = tf.zeros_like(input)
+    r1 = tf.ones_like(input)
+    r2 = tf.ones_like(input) * 2
+    r4 = tf.ones_like(input) * 4
+
+    replace0 = tf.where(filter357, input, r0)
+    replace1 = tf.where(tf.equal(replace0, 3), r1, replace0)
+    replace2 = tf.where(tf.equal(replace1, 5), r2, replace1)
+    replace4 = tf.where(tf.equal(replace2, 7), r4, replace2)
+    tf.one_hot(replace4, 5)
+    ```
+
 
 ## concat报错定位
 - 问题
