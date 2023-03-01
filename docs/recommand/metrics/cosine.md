@@ -31,3 +31,7 @@ vec2 = np.array([5, 6, 7, 8])
 cos_sim = cosine_similarity(vec1.reshape(1, -1), vec2.reshape(1, -1))
 print(cos_sim[0][0])
 ```
+## ecoc
+```
+ecoc_ctr =sum(clicked)/sum(p_ctr)
+```
