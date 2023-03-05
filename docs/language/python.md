@@ -20,3 +20,12 @@ data["label"].replace("Iris-setosa", 0, inplace=True)
     engin.runAndWait()
     ```
 
+
+
+## gym
+
+- install
+  ```conda install -n env-py37-t15 -c conda-forge gym==0.25```
+
+
+
