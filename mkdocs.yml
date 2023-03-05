@@ -76,6 +76,7 @@ nav:
   - 推荐: 
     - recommand/index.md
     #- 召回/TF-IDF: recommand/figure/tfidf.md 
+    - 数学/函数曲线: recommand/math/math-func.md
     - 排序/损失函数: recommand/rank/loss.md
     - 评估/cosine: recommand/metrics/cosine.md
   #- 搜索: 
