@@ -28,7 +28,8 @@ conda deactivate
 (base) ssdeMacBook-Pro:~ ss$ anaconda search -t conda xgboost
 ### conda安装package
 (base) ssdeMacBook-Pro:~ ss$ conda install -c anaconda py-xgboost
-
-
+### conda 指定通道搜索安装包版本
+conda search -c conda-forge gym
+conda install -n env-py37-t15 -c conda-forge gym
 
 
