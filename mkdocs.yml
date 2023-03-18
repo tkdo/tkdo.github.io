@@ -79,8 +79,12 @@ nav:
     - 数学/函数曲线: recommand/math/math-func.md
     - 排序/损失函数: recommand/rank/loss.md
     - 评估/cosine: recommand/metrics/cosine.md
+  
   #- 搜索: 
   #  - search/index.md 
+  - 强化学习: 
+  - rlearning/index.md
+  - gym工具包: rlearning/gym.md
   - 工具: 
     - tools/index.md 
     - Git命令: tools/git.md
