@@ -104,3 +104,9 @@ Java Extension Pack
     ]
 }
 ```
+
+
+
+## vscode在debug的时候无反应
+- vscode 进行debug，没有任何反映，比如3.6.1的python环境安装vs安装（python=2023年就有问题，如果202204就没啥问题）IntelliSense (Pylance), Linting, Debugging
+

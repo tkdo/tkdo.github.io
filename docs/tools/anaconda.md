@@ -8,7 +8,6 @@ export ANACONDA_HOME=/root/pangu/env/anaconda3
 export PATH="$ANACONDA_HOME/bin:$PATH"
 alias python="$ANACONDA_HOME/bin/python"
 ```
-
 ## conda虚拟环境相关问题
 ### 创建虚拟环境
 conda create -n env-py37-t15 python=3.7.6
@@ -31,5 +30,10 @@ conda deactivate
 ### conda 指定通道搜索安装包版本
 conda search -c conda-forge gym
 conda install -n env-py37-t15 -c conda-forge gym
+
+
+## pip 
+### pip设置下载timeout
+pip --default-timeout=1000 install pandas
 
 
