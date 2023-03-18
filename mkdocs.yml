@@ -69,6 +69,8 @@ nav:
     - Java: language/java.md
     - Python: language/python.md
     - Tensorflow: language/tensorflow.md
+    - Pytorch: language/pytorch.md
+
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
