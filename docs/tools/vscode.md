@@ -110,3 +110,12 @@ Java Extension Pack
 ## vscode在debug的时候无反应
 - vscode 进行debug，没有任何反映，比如3.6.1的python环境安装vs安装（python=2023年就有问题，如果202204就没啥问题）IntelliSense (Pylance), Linting, Debugging
 
+## vscode可以折叠代码
+    需求 && 操作
+    常用的两类场景(注意要操作的范围)：
+    要操作光标所在文件中的所有代码块：
+    折叠所有 Ctrl+K+0
+    展开所有 Ctrl+K+J
+    仅仅操作光标所处代码块内的代码：
+    折叠 Ctrl+Shift+[
+    展开 Ctrl+Shift+]
