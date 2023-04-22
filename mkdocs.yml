@@ -83,9 +83,6 @@ nav:
     - 评估/cosine: recommand/metrics/cosine.md
   #- 搜索: 
   #  - search/index.md 
-  - 强化学习: 
-    - rlearning/index.md
-    - gym工具包: rlearning/gym.md
   - 工具: 
     - tools/index.md 
     - Git命令: tools/git.md
@@ -95,6 +92,11 @@ nav:
     - vscode: tools/vscode.md
     - conda: tools/anaconda.md
     - maven: tools/maven.md
+  - 其他: 
+    - other/index.md
+    - gym工具包: other/gym.md
+    - 3d建模: other/3d.md
+    - 嵌入式: other/emb.md
   - 关于:
     - about/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
     - 支持作者: about/support.md
