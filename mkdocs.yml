@@ -96,7 +96,8 @@ nav:
     - other/index.md
     - gym工具包: other/gym.md
     - opencv: other/opencv.md
-    - 3d建模: other/3d.md
+    - 3d建模: other/3dmodel.md
+    - 3d打印: other/3dprint.md
     - 嵌入式: other/emb.md
   - 关于:
     - about/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
