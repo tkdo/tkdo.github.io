@@ -119,3 +119,10 @@ Java Extension Pack
     仅仅操作光标所处代码块内的代码：
     折叠 Ctrl+Shift+[
     展开 Ctrl+Shift+]
+## vscode server mac
+    macOS v11.6.5
+    Installing latest from Homebrew.
+        brew install code-server
+    Brew release has been installed.
+    Run with:
+        code-server
