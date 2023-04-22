@@ -95,6 +95,7 @@ nav:
   - 其他: 
     - other/index.md
     - gym工具包: other/gym.md
+    - opencv: other/emb.md
     - 3d建模: other/3d.md
     - 嵌入式: other/emb.md
   - 关于:
