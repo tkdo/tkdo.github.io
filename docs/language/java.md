@@ -27,3 +27,28 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
     }
     System.out.println(userMultiVector);
 ```
+
+```java
+public List<Item> mergeResultByOrder(Map<String, List<Item>> i2IValuesRecall,
+                                  int expectTextResCnt, int expectVideoResCnt, boolean isDebug) {
+        List<Item> result = new ArrayList<>();
+        List<Item> resText = new ArrayList<>();
+        List<Item> resVideo = new ArrayList<>();
+        for(int i=0; i<expectTextResCnt + expectVideoResCnt; i++){
+            for(String keyNewsId : i2IValuesRecall.keySet()){
+                List<Item> i2iValues = i2IValuesRecall.get(keyNewsId);
+                if(i< i2iValues.size()){
+                    if("0".equals(i2iValues.get(i).getType()) && resText.size() <= expectTextResCnt){
+                        resText.add(i2iValues.get(i));
+                    }
+                    if((!"0".equals(i2iValues.get(i).getType())) && resVideo.size() <= expectVideoResCnt){
+                        resVideo.add(i2iValues.get(i));
+                    }
+                }
+            }
+        }
+        result.addAll(resText);
+        result.addAll(resVideo);
+        return result;
+    }
+```
