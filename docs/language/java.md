@@ -29,7 +29,16 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
 
 ```java
-public List<Item> mergeResultByOrder(Map<String, List<Item>> i2IValuesRecall,
+    /**
+     *
+     * @param recallContext
+     * @param i2IValuesRecall
+     * @param expectTextResCnt
+     * @param expectVideoResCnt
+     * @param isDebug
+     * @return
+     */
+    public List<Item> scoreFusion(RecallContext recallContext, Map<String, List<Item>> i2IValuesRecall,
                                   int expectTextResCnt, int expectVideoResCnt, boolean isDebug) {
         List<Item> result = new ArrayList<>();
         List<Item> resText = new ArrayList<>();
@@ -37,18 +46,24 @@ public List<Item> mergeResultByOrder(Map<String, List<Item>> i2IValuesRecall,
         for(int i=0; i<expectTextResCnt + expectVideoResCnt; i++){
             for(String keyNewsId : i2IValuesRecall.keySet()){
                 List<Item> i2iValues = i2IValuesRecall.get(keyNewsId);
-                if(i< i2iValues.size()){
-                    if("0".equals(i2iValues.get(i).getType()) && resText.size() <= expectTextResCnt){
-                        resText.add(i2iValues.get(i));
-                    }
-                    if((!"0".equals(i2iValues.get(i).getType())) && resVideo.size() <= expectVideoResCnt){
-                        resVideo.add(i2iValues.get(i));
-                    }
+                List<Item> i2iTexts = new ArrayList<>();
+                List<Item> i2iVideos = new ArrayList<>();
+                for(int j=0; j<i2iValues.size(); j++){
+                    Item item = i2iValues.get(j);
+                    if("0".equals(item.getType())) i2iTexts.add(item);
+                    else i2iVideos.add(item);
                 }
+                if(resText.size() >= expectTextResCnt  && resVideo.size() >= expectVideoResCnt) break;
+                if(i < i2iTexts.size() && resText.size() < expectTextResCnt)
+                    resText.add(i2iTexts.get(i));
+                if(i< i2iVideos.size() && resVideo.size() < expectVideoResCnt)
+                    resVideo.add(i2iVideos.get(i));
             }
         }
         result.addAll(resText);
         result.addAll(resVideo);
         return result;
+    }
+    return result;
     }
 ```
