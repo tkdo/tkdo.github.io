@@ -47,3 +47,6 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/peterjc123/
 conda config --set show_channel_urls yes
 
+### 设置阿里云
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+
