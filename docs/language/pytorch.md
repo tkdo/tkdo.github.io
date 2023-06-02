@@ -14,3 +14,9 @@ model.eval()的作用是不启用 Batch Normalization 和 Dropout。
 
 
 
+
+
+
+
+
+

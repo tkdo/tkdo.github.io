@@ -13,6 +13,11 @@
 "python.pythonPath": "/path/to/python"
 }
 ```
+- 配置python解释器
+    
+    在命令面板中，输入“Python: Select Interpreter”并选择该命令。
+
+
 - launch.json
 ```json
 {
