@@ -38,6 +38,24 @@
         }
     ]
 }
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Anaconda (colossal)",
+            "type": "python",
+            "request": "launch",
+            "pythonPath": "/pangu/env/anaconda3/envs/colossal/bin/python",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env":{},
+            "cwd":"${workspaceFolder}"
+        }
+    ]
+}
 ```
 
 
