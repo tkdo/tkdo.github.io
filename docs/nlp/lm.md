@@ -6,7 +6,12 @@ DeltaPapers: https://github.com/thunlp/DeltaPapers
 Programming Toolkit
 OpenPrompt: https://github.com/thunlp/OpenPrompt
 OpenDelta: https://github.com/thunlp/OpenDelta
+PromptDemo: https://colab.research.google.com/drive/10syott1zXaQkjnlxOiSXKDFGy68SWR0y?usp=sharing
 
-https://colab.research.google.com/drive/10syott1zXaQkjnlxOiSXKDFGy68SWR0y?usp=sharing
+
+
+
+
+
 
 
