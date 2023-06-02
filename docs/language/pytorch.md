@@ -10,9 +10,15 @@ model.eval()的作用是不启用 Batch Normalization 和 Dropout。
     训练完train样本后，生成的模型model要用来测试样本。在model(test)之前，需要加上model.eval()，否则的话，有输入数据，即使不训练，它也会改变权值。这是model中含有BN层和Dropout所带来的的性质。
     在做one classification的时候，训练集和测试集的样本分布是不一样的，尤其需要注意这一点。
 
-
-
-
+### pytorch tensorborad
+    ```python
+    from torch.utils.tensorboard import SummaryWriter
+    import numpy as np 
+    writer = SummaryWriter("logs")
+    for i in range(100):
+        writer.add_scalar("y=2x", 2*i, i)
+    writer.close()
+    ```
 
 
 
