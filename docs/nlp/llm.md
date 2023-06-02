@@ -9,3 +9,16 @@ OpenDelta: https://github.com/thunlp/OpenDelta
 PromptDemo: https://colab.research.google.com/drive/10syott1zXaQkjnlxOiSXKDFGy68SWR0y?usp=sharing
 
 
+BMInf
+
+
+FP8 <- INT8
+
+
+
+
+
+ANCE论文
+
+
+
