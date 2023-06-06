@@ -11,14 +11,14 @@ model.eval()的作用是不启用 Batch Normalization 和 Dropout。
     在做one classification的时候，训练集和测试集的样本分布是不一样的，尤其需要注意这一点。
 
 ### pytorch tensorborad
-    ```python
-    from torch.utils.tensorboard import SummaryWriter
-    import numpy as np 
-    writer = SummaryWriter("logs")
-    for i in range(100):
-        writer.add_scalar("y=2x", 2*i, i)
-    writer.close()
-    ```
+```python
+from torch.utils.tensorboard import SummaryWriter
+import numpy as np 
+writer = SummaryWriter("logs")
+for i in range(100):
+    writer.add_scalar("y=2x", 2*i, i)
+writer.close()
+```
 
 
 
