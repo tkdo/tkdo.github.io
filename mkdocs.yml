@@ -90,7 +90,7 @@ nav:
     - nvim工具: tools/nvim.md  
     - markdown: tools/markdown.md
     - vscode: tools/vscode.md
-    - conda: tools/anaconda.md
+    - conda/pip: tools/anaconda.md
     - maven: tools/maven.md
   - 其他: 
     - other/index.md
