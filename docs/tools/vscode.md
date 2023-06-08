@@ -149,3 +149,10 @@ Java Extension Pack
     Brew release has been installed.
     Run with:
         code-server
+
+    curl -fsSL https://code-server.dev/install.sh | sh
+    ./code-server
+    sudo systemctl enable --now code-server@$USER
+    访问http://127.0.0.1:8080即可。
+    登陆密码记录在~/.config/code-server/config.yaml
+
