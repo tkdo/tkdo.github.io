@@ -94,7 +94,8 @@ nav:
     - maven: tools/maven.md
   - 其他: 
     - other/index.md
-    - nlp/llm: nlp/llm.md
+    - llm/data: nlp/data-parallel.md
+    - llm/model: nlp/model-parallel.md
     - gym工具包: other/gym.md
     - opencv: other/opencv.md
     - 3d建模: other/3dmodel.md
