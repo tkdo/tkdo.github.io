@@ -77,6 +77,13 @@ in0拼接in1拼接上in2拼接上in3，然后广播给所有显卡。
 
 
 
+####  11B PLM's parameters
+$ \frac {11 *  10^9 * 4(FP32)}  {1024^3}  = 40GB$
+
+#### 中间结果，Data Parallel
+![中间结果](img/intermediate.png)
+如果没有数据并行[Batch,Len,Dim]；有数据并行[Batch/n, Len, DIm]。
+
 
 
 
