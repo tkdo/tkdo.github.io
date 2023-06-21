@@ -89,6 +89,15 @@ for i in range(10):
 
 writer.close()
 ```
-
+```python
+RuntimeError: NCCL error in: ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:46, unhandled cuda error, NCCL version 2.10.3
+>>> print(torch.backends.cudnn.version())
+8302
+>>> import torch; print(torch.__version__)
+1.12.1+cu113
+>>> import torch; print(torch.version.cuda)
+11.3
+pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+```
 
 
