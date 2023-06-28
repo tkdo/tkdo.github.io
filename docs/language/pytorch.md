@@ -101,3 +101,29 @@ pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pyt
 ```
 
 
+```
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  VGPU(0) Tesla T4    On   | 00000000:3B:00.0 Off |                    0 |
+| N/A   47C    P0    45W /  70W |   3393MiB / 13573MiB |     25%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+报错
+运行代码时报错：TypeError: clamp(): argument 'min' (position 2) must be Number, not Tensor
+原因分析
+结合github链接：https://github.com/Denys88/rl_games/pull/142 ,发现是torch.clamp()函数在pytorch1.9.0之前不支持Tensor作为clamp()的max/min参数，而1.9.0及之后支持。
+解决方案
+升级pytorch大于等于1.9.0版本，我这里升级到1.12.0
+pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+pip3 install torch==1.10.1+cu111 torchvision==0.11.2+cu111 -f https://download.pytorch.org/whl/cu111/torch_stable.html
+https://blog.csdn.net/BIT_HXZ/article/details/127604680
+
+
+RuntimeError: NCCL error in: /pytorch/torch/lib/c10d/ProcessGroupNCCL.cpp:38, unhandled cuda error, NCCL version 2.7.8 #4530
+pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+```
