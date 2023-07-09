@@ -48,6 +48,18 @@
     - compulsory （各种力量）一起驱使的 >> 规定的，强迫的；义务的
     - School is compulsory for children between the ages of 6 and 14.
     
+### ant 构成名词；工作执行者
+- depressant n. 抑制剂，抑制药，镇静剂
+    - de- =表示否等；除去；向下
+    - press = 按压
+    -  ant = 构成名词；工作执行者
+    - This is why you may have heard that alcohol is a depressant.
+
+### con - (com-) = 一起；全；加强语气
+- convey vt. 表达，传递，传达；运输，运送
+    - con - (com-) = 一起；全；加强语气
+    - vey=路
+    - Please convey my apologies to Mr. Ackerley.
 
 
 
