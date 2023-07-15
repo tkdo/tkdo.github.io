@@ -60,9 +60,56 @@
     - con - (com-) = 一起；全；加强语气
     - vey=路
     - Please convey my apologies to Mr. Ackerley.
+### dermin = 结束，边界
+- determine vt. 确定，查明，决定 vt.vi，决定，下决心
+    - de = 表否定；除去；向下
+    - dermin = 结束，边界
+    - Julia will determine the cause of the illness.
+### ate = 构成动词
+- terminate vt.vi. (使)结束，(使)终止. vi.到达终点
+    - termin = 结束，边界
+    - ate = 构成动词
+    - I terminated the contract this afternoon.
+### pos = 放置
+-  composition n.构成，作品，作曲，作为，构图
+    - com- = 一起；全；加强语气
+    - pos = 放置
+    - tion = 构成名词；表"动作、状态"等
+    - composition = compose派生名词，构成，作品，创作，构图，作文
+    -  The chemical composition of their spaceship is unknown.
+# dis- = 表示否定；远离
+- disposition n.性情，倾向，布置，安排，处置
+    - dis- = 表示否定；远离
+    - pos = 放置
+    - -tion = 构成名词；表示"动作、状态"等
+    - disposition=来自dispose(使倾向于，乐意)性情，倾向；布置，安排；处置
+
+# op-(ob-) = 反；向；妨碍
+- opposition n.反对，对手，反手党，对立
+    - op-(ob-) = 反；向；妨碍
+    - pos = 放置
+    - -tion = 构成名词：表"动作、状态"等，opposition=oppose派生的名词；反对，反抗，反手党，对手
+    - Most of American's wars had faced some opposition.
+
+# -ure 构成抽象名词
+- posture n. 姿态，姿势，态度，立场 vi.装腔作势
+    - post = 放置
+    - -ure = 构成抽象名词
+    - posture n. 姿态，姿势，态度，立场 vi.装腔作势
+    - Good posture will help you breathe and speak easier.
+
+# sup- (sub-) = 在下面
+-  suppress vt. 镇压，压抑，封锁，隐瞒，抑制
+    - sup- (sub-) = 在下面
+    - press = 按压
+    - suppress = 向下压，镇压，压制；封锁；抑制；阻止
+    - I think he's trying to  suppress a smile.
 
 
 
+
+
+    
 
 
 
