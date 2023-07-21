@@ -57,7 +57,27 @@
     ]
 }
 ```
-
+## settings.json
+```
+{
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.fontFamily": "Consolas",
+    "editor.fontWeight": "400",
+    "editor.fontSize": 20,
+    "editor.lineHeight": 22,
+    "editor.rulers": [
+        80
+    ],
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "git.confirmSync": false,
+    "workbench.tree.indent": 20,
+    "workbench.fontsize": 40,
+    "window.zoomLevel": 0
+}
+```
 
 ##  配置Java-Vscode
 - debug插件
