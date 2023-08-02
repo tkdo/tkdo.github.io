@@ -145,7 +145,7 @@ pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pyt
   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
-  File "/data/juicefs_rank/public_data/huggingface/modules/transformers_modules/THUDM/chatglm2-6b/b1502f4f75c71499a3d566b14463edd62620ce9f/modeling_chatglm.py", line 14, in <module>
+  File "xxxx/huggingface/modules/transformers_modules/THUDM/chatglm2-6b/b1502f4f75c71499a3d566b14463edd62620ce9f/modeling_chatglm.py", line 14, in <module>
     from torch.nn.utils import skip_init
 ImportError: cannot import name 'skip_init' from 'torch.nn.utils' (/usr/local/lib/python3.8/dist-packages/torch/nn/utils/__init__.py)
 ```
