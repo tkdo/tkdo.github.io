@@ -122,8 +122,35 @@ pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pyt
 pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
 pip3 install torch==1.10.1+cu111 torchvision==0.11.2+cu111 -f https://download.pytorch.org/whl/cu111/torch_stable.html
 https://blog.csdn.net/BIT_HXZ/article/details/127604680
-
-
 RuntimeError: NCCL error in: /pytorch/torch/lib/c10d/ProcessGroupNCCL.cpp:38, unhandled cuda error, NCCL version 2.7.8 #4530
 pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+```python
+ File "ptuning/main.py", line 411, in <module>
+    main()
+  File "ptuning/main.py", line 123, in main
+    model = AutoModel.from_pretrained(model_args.model_name_or_path, config=config, trust_remote_code=True)
+  File "/usr/local/lib/python3.8/dist-packages/transformers/models/auto/auto_factory.py", line 475, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+  File "/usr/local/lib/python3.8/dist-packages/transformers/dynamic_module_utils.py", line 443, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module.replace(".py", ""))
+  File "/usr/local/lib/python3.8/dist-packages/transformers/dynamic_module_utils.py", line 164, in get_class_in_module
+    module = importlib.import_module(module_path)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/data/juicefs_rank/public_data/huggingface/modules/transformers_modules/THUDM/chatglm2-6b/b1502f4f75c71499a3d566b14463edd62620ce9f/modeling_chatglm.py", line 14, in <module>
+    from torch.nn.utils import skip_init
+ImportError: cannot import name 'skip_init' from 'torch.nn.utils' (/usr/local/lib/python3.8/dist-packages/torch/nn/utils/__init__.py)
+```
+解决方案
+```
+pip3 install torch==1.10.1+cu111 torchvision==0.11.2+cu111 -f https://download.pytorch.org/whl/cu111/torch_stable.html
+https://blog.csdn.net/BIT_HXZ/article/details/127604680
 ```
