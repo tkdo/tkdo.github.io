@@ -96,6 +96,7 @@ nav:
     - other/index.md
     - LLM数据并行: nlp/data-parallel.md
     - LLM模型并行: nlp/model-parallel.md
+    - LLM生成参数: nlp/transformers-generator.md
     - gym工具包: other/gym.md
     - opencv: other/opencv.md
     - 3d建模: other/3dmodel.md
