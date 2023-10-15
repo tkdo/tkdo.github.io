@@ -6,10 +6,10 @@ sudo yum install -y git gcc-c++ make openssl-devel gflags-devel protobuf-devel p
 ```
 
 2、安装brpc
-### Q
+Q:
 In file included from /root/gitee/brpc_playground/echo_service/client.cpp:1:0:
 /root/gitee/brpc_playground/echo_service/client.h:1:26: 致命错误：brpc/channel.h：没有那个文件或目录
-### A
+A:
 下载brpc源码包：https://gitee.com/baidu/BRPC.git
 ```bash
 mkdir bld
@@ -20,9 +20,9 @@ sudo make install
 ```
 
 ## 3、libbrpc不存在
-### Q
+Q:
 ./server: error while loading shared libraries: libbrpc.so: cannot open shared object file: No such file or directory
-### A
+A:
 ```bash
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 find / -name libbrpc.so*
