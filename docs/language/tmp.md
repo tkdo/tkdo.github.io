@@ -1,3 +1,53 @@
+# 编译过程
+- 预处理Pre-Processing  //.i文件
+```c++
+# -E 选项制定编译器仅对输入文件进行预处理
+g++ -E test.cpp -o test.i //.i文件
+```
+- 编译-Compiling     //.s文件
+```c++
+# -s 编译选项告诉g++在C++代码产生了汇编语言文件后停止编译
+# g++ 产生汇编语言文件的缺省扩展名.s
+g++ -s test.i -o test.s
+```
+- 汇编Assembling   //.o文件
+```c++
+# -c 选项告诉g++仅把源代码编为炜机器语言的目标代码
+# 缺省时，g++建立目标代码文件有一个.o扩展名
+g++ -c test.s -o test.o
+```
+- 链接Linking    //bin文件
+```c++
+# -o 编译选项来为将来的可以的执行文件用制定的文件名
+g++ test.o -o test
+```
+
+
+
+# gdb
+- 调试开始：执行gdb[exefilename]，进入gdb调试程序，其中execfilename为要调试的文件名
+```bash
+## 一下命令后括号内为命令简化使用，比如run(r)，直接输入命令r代替命令run
+$(gdb)help(h)  # help
+$(gdb)run(r)   #重新开始运行文件（run-text：加载文本文件，run-bin：加载二进制文件） 
+$(gdb)start    # 单步执行，运行程序，停在第一行执行语句
+$(gdb)list(l)  # 查看源代码（list-n，从第几行开始查看代码，list+函数名：查看具体的函数）
+$(gdb)set      # 设置比变量的值
+$(gdb)next(n)  # 单步调试（逐过程，函数直接执行）
+$(gdb)step(s)  # 单步调试（逐语句，跳入自定义函数内部执行）
+$(gdb)backtrace(bt) # 查看函数的调用栈帧和层级关系
+$(gdb)frame(f)      # 切换函数栈帧
+$(gdb)info(i)       # 查看函数内部局部变量的数值
+$(gdb)finish        # 结束当前函数，返回函数调用点
+$(gdb)continue(c)   # 继续运行
+$(gdb)print(p)      # 打印当前的值和地址
+$(gdb)quit(q)       # 推出gdb
+$(gdb)break+num(b)     # 在第num行设置断点
+$(gdb)info breakpoints # 查看当前设置的所有断点
+$(gdb)delete breakpoints+num(d) # 删除第num行断点
+```
+
+
 # cmake
 ## 语法特性介绍
 - 基本语法格式：制造令(参数1 参数2...)
@@ -111,22 +161,3 @@ set(CMAKE_BUILD_TYPE Release)
 
 
 
-# gdb
-- 调试开始：执行gdb[exefilename]，进入gdb调试程序，其中execfilename为要调试的文件名
-```bash
-## 一下命令后括号内为命令简化使用，比如run(r)，直接输入命令r代替命令run
-$(gdb)help(h)  # help
-$(gdb)run(r)   #重新开始运行文件（run-text：加载文本文件，run-bin：加载二进制文件） 
-$(gdb)start    # 单步执行，运行程序，停在第一行执行语句
-$(gdb)list(l)  # 查看源代码（list-n，从第几行开始查看代码，list+函数名：查看具体的函数）
-$(gdb)set      # 设置比变量的值
-$(gdb)next(n)  # 单步调试（逐过程，函数直接执行）
-$(gdb)step(s)  # 单步调试（逐语句，跳入自定义函数内部执行）
-$(gdb)backtrace(bt) # 查看函数的调用栈帧和层级关系
-$(gdb)frame(f)      # 切换函数栈帧
-$(gdb)info(i)       # 查看函数内部局部变量的数值
-$(gdb)finish        # 结束当前函数，返回函数调用点
-$(gdb)continue(c)   # 继续运行
-$(gdb)print(p)      # 打印当前的值和地址
-$(gdb)quit(q)       # 推出gdb
-```
