@@ -107,3 +107,26 @@ set(CMAKE_BUILD_TYPE Release)
 
 
 
+
+
+
+
+# gdb
+- 调试开始：执行gdb[exefilename]，进入gdb调试程序，其中execfilename为要调试的文件名
+```bash
+## 一下命令后括号内为命令简化使用，比如run(r)，直接输入命令r代替命令run
+$(gdb)help(h)  # help
+$(gdb)run(r)   #重新开始运行文件（run-text：加载文本文件，run-bin：加载二进制文件） 
+$(gdb)start    # 单步执行，运行程序，停在第一行执行语句
+$(gdb)list(l)  # 查看源代码（list-n，从第几行开始查看代码，list+函数名：查看具体的函数）
+$(gdb)set      # 设置比变量的值
+$(gdb)next(n)  # 单步调试（逐过程，函数直接执行）
+$(gdb)step(s)  # 单步调试（逐语句，跳入自定义函数内部执行）
+$(gdb)backtrace(bt) # 查看函数的调用栈帧和层级关系
+$(gdb)frame(f)      # 切换函数栈帧
+$(gdb)info(i)       # 查看函数内部局部变量的数值
+$(gdb)finish        # 结束当前函数，返回函数调用点
+$(gdb)continue(c)   # 继续运行
+$(gdb)print(p)      # 打印当前的值和地址
+$(gdb)quit(q)       # 推出gdb
+```
