@@ -176,3 +176,76 @@ Java Extension Pack
     访问http://127.0.0.1:8080即可。
     登陆密码记录在~/.config/code-server/config.yaml
 
+## cpp debug
+- launch.json
+```json
+{
+    //Use Intellisense to learn about possible attributes.
+    //Hover to view descriptions of existing attributes.
+    //For more information,visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version":"0.2.0",
+    "configurations":[
+        {
+            "name":"main : makefile build and debug",    //name随便取，用来在定义了多个configuration的时候区分执行的是哪一套参数。
+            "type":"cppdbg",        //这个一般就不要改了，这个我还不了解其他的参数配置
+            "request":"launch",    //这个一般就不要改了，这个我还不了解其他的参数配置
+            "program":"${workspaceFolder}/build/main",    //执行这个文件，相当于命令行中输入这行
+            "args":[],    //program的参数，相当于命令行中在program后输入用空格隔开的这些参数。我这里前两个是执行文件自带的参数设置，后三个是将标准输出和标准错误输入到文件out中。
+            "stopAtEntry":false,    //大概是表示是否在main函数处停下，类似在main上打断点。
+            "cwd":"${workspaceFolder}",    //表示在哪个目录下执行program，相当于命令行中输入cd 该行
+            "environment":[],          //不知道干嘛的
+            "externalConsole":false,    //如果使用控制台则需要打开这个。我这边加了这句后会有不知道在使用哪个控制台的问题，反正会很奇怪，就注释掉了。
+            "MIMode":"gdb",            //使用哪个工具作为调试工具，只有两个选择gdb或lldb。lldb我不了解，和我一样不了解的人就写gdb吧。
+            "setupCommands":[    //gdb相关的一些设置命令，相当于在执行gdb后，对gdb下命令行的设置。gdb相关的初始化配置，要在~/.gdbinit文件中配置，或者在这配置，我另开一篇文章写，涉及下面enable-pretty-printing的，不一定开了就有用了，还涉及其他的问题，这里先放个TODO。
+                {
+                    "description":"for gdb start all print",    //给人看的描述
+                    "text":"-enable-pretty-printing",        //gdb下执行的命令，启用整齐打印，就是让gdb打印的东西好看一点。
+                    "ignoreFailures":true        //并不清楚这个实际用来干嘛
+                }
+            ],
+            "preLaunchTask": "Build",
+            //"preLaunchTask":"C/C++ g++ build active file",    //执行program前需要执行的task，这里需要和task.json中要执行的task的label一致
+            "miDebuggerPath": "/usr/bin/gdb" 
+        }
+    ]
+}
+```
+- tasks.json
+```json
+{   
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceFolder}/build"
+    },
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cmake",
+            "command": "cmake",
+            "args": [
+                ".."
+            ]
+        },
+        {
+            "label": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "make",
+            "args": [
+
+            ]
+        },
+        {
+            "label": "Build",
+			"dependsOrder": "sequence",
+            "dependsOn":[
+                "cmake",
+                "make"
+            ]
+        }
+    ]
+
+}
+```
