@@ -153,8 +153,8 @@ Java Extension Pack
 ## vscode在debug的时候无反应
 - vscode 进行debug，没有任何反映，比如3.6.1的python环境安装vs安装（python=2023年就有问题，如果202204就没啥问题）IntelliSense (Pylance), Linting, Debugging
 
-## vscode可以折叠代码
-    需求 && 操作
+## vscode 常用的快捷键
+- 折叠相关
     常用的两类场景(注意要操作的范围)：
     要操作光标所在文件中的所有代码块：
     折叠所有 Ctrl+K+0
@@ -162,6 +162,25 @@ Java Extension Pack
     仅仅操作光标所处代码块内的代码：
     折叠 Ctrl+Shift+[
     展开 Ctrl+Shift+]
+- 查找相关
+    查找 Ctrl+F
+    查找替换 Ctrl+H
+    整个文件夹中查找 Ctrl+Shift+F
+- 显示相关
+    全屏 F11
+    ZoomIn/ZoomOut Ctrl +/-
+    侧边栏显/隐 Ctrl+B
+    显示资源管理器 Ctrl+Shift+E
+    显示搜索 Ctrl+Shift+F
+    显示Git Ctrl+Shift+G
+    显示Debug Ctrl+shift+D
+    显示Output Ctrl+shift+U
+- 重构代码
+    找到所有引用：Shift+F12
+    同时修改本文件中所有匹配的：Ctrl+F12
+    重命名：比如要求改一个方法，可以选中后按F12，输入新的名字，回车，发现所有文件都修改了
+    查看diff：在explorer里选择文件右键set file to compare，然后需要对比的文件右键选择 compare with file_name_you_chose
+
 ## vscode server mac
     macOS v11.6.5
     Installing latest from Homebrew.
