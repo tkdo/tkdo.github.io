@@ -49,8 +49,58 @@ link_directoies(/usr/lib/mylibfolder ./lib)
 add_library(hello SHARED ${SRC})
 ```
 - add_compile_options -添加编译器参数 
- - 语法： 
-
+ - 语法： add_compile_options(<option>...)
+```c++
+# 添加编译参数 -wall -std=c++11
+add_compile_options(-wall -std=c++11 -o2)
+```
+- add_executable - 生成可执行文件
+- 语法： add_executable(exename source1 source2 ... sourceN)
+```c++
+# 编译main.cpp生成可执行main
+add_executable(main main.cpp)
+```
+- target_link_libraries -为target添加需要链接的共享库--->相同于制定g++的编译器-I参数
+    - 语法： target_link_libraries(target library1<debug | optimized> library2 ...)
+```c++
+#将hello动态库文件链接到可执行的main
+target_link_libraries(main hello)
+```
+- add_subdirectory - 向当前工程添加存放源文件目录，并可以指定中间二进制和目标二进制存放的位置
+    - 语法：add_subdirectory(source_dir [binary_dir][EXCLUDE_FROM_ALL])
+```
+# 添加src子目录，src中需有一个CMakeLists.txt
+add_subdirectory(src)
+```
+- aux_source_directory - 发现一个目录下所有的源代码文件并将列表存储到一个变量中，这个指令临时备用来自动构建源文件列表
+    - 语法：aux_source_directory(dir VARIABLE)
+```c++
+# 定义SRC变量，其值为当前目录下所有文件的源代码
+aux_source_directory(. SRC)
+# 编译SRC变量所代表的源文件，生成main可执行文件
+add_executable(main ${SRC})
+```
+### CMake 常用变量
+- CMAKE_C_FLAGS gcc编译选项
+- CMAKE_CXX_FLAGS g++编译选项
+```c++
+# 在CMAKE_CXX_FLAGS编译选项后追加-std=c++11
+set(CMAKE_CXX_FLAGS "{CMAKE_CXX_FLAGS} -std=c++11")
+```
+- CMAKE_BUILD_TYPE 编译类型(Debug, Release)
+```c++
+# 设定编译类型为debug，调试时需要选debug
+set(CMAKE_BUILD_TYPE Debug)
+# 设定编译类型为release，发布时需要选择Release
+set(CMAKE_BUILD_TYPE Release)
+```
+- CMAKE_BINARY_DIR
+- PROJECT_BINARY_DIR
+<projectname>_BINARY_DIR
+1. 这三个变量指代的内容是一致的
+2. 如果是in source build, 指的就是工程师顶层目录
+2. 如果是out-of-source编译，指的是工程编译发生的目录
+4. PROJECT_BINARY_DIR跟其他的指令稍有区别，不过现在，你可以理解他们是一致的。
 
 
 
