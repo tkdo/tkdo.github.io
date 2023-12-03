@@ -33,3 +33,12 @@ data["label"].replace("Iris-setosa", 0, inplace=True)
     uvicorn api1:app --reload --workers 4 --host 0.0.0.0 --port 8000
     kill -TERM pid_of_uvicorn_server
     ```
+
+## [Jupyter lab](/language/python/python/jupyterlab)
+## [tqdm](/language/python/python/tqdm)
+
+
+
+
+
+
