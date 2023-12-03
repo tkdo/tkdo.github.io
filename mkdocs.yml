@@ -157,14 +157,26 @@ markdown_extensions:
   - toc:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
-      # linenums: true # 显示行号
-      # auto_title: true # 显示编程语言名称
+      ######## add start ##########
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      linenums: true # 显示行号
+      auto_title: true # 显示编程语言名称
+      ######## add  end ##########
+
   - pymdownx.superfences: # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
   - pymdownx.details: # 代码折叠
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true 
+  ######## add start ##########
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  ######## add end ##########
+
 extra_javascript:
   # latex支持
   # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
