@@ -69,7 +69,6 @@ nav:
     - Python: language/python.md
     - Tensorflow: language/tensorflow.md
     - Pytorch: language/pytorch.md
-    - tmp: language/grpc.md
   - 数据: 
     - data/index.md 
     - Hive: data/hive.md 
