@@ -162,7 +162,7 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
       linenums: true # 显示行号
-      auto_title: true # 显示编程语言名称
+      # auto_title: true # 显示编程语言名称
       ######## add  end ##########
 
   - pymdownx.superfences: # 代码块高亮插件
