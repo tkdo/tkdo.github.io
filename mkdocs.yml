@@ -71,6 +71,7 @@ nav:
     - Pytorch: language/pytorch.md
   - 数据: 
     - data/index.md 
+    - Mysql: data/mysql.md 
     - Hive: data/hive.md 
     - Spark: data/spark.md
   - 推荐: 
