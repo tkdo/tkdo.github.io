@@ -36,7 +36,7 @@ data["label"].replace("Iris-setosa", 0, inplace=True)
 
 ### [Jupyter lab](./python/jupyterlab.md)
 ### [tqdm](./python/tqdm.md)
-
+### [scrapy](./python/scrapy.md)
 
 
 
