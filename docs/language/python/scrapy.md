@@ -51,11 +51,42 @@ pip install -r requirement.txt
 
 #### 多条件选择
 可以使用|进行或的条件选择
-xpath("text() | .//p/text()  | .//p/span/text()")
+    xpath("text() | .//p/text()  | .//p/span/text()")
 
 
 #### 使用函数
-contains(s1, s2)
+contains(s1, s2)  # 返回s1中包含s2的节点
+text() # 仅返回所指元素的文本内容
+string() # 返回所指元素的所有节点文本内容
+    //a[contains(@href, 'promote.html')] # 定位href属性中包含“prompt.html”的所有节点
+    //a[starts-with(@href, 'ads')] # href属性值是以“/ads”开头的所有a节点
+    //a[text()="应用推广"] # 元素内的文本为“应用推广”的所有a节点
+
+#### Xpath轴
+child 选取当前节点的所有子元素
+parent 选取当前节点的所有父节点
+descendant 选取当前节点的所有后代元素（子、孙等）
+ancestor 选取当前节点的所有先辈（父、祖父等）
+desendant-or-self 选取当前节点的所有后代元素（子、孙等）以及当前节点本身
+ancestor-or-self  选取当前节点的所有先辈（父、祖父等）以及当前节点本身
+preceding-sibling 选取当前节点的所有同级节点
+following-sibling 选取当前节点之后的所有同级节点
+preceding 选取文档中当前节点的开始标签之前的所有节点
+following 选取文档中当前节点的结束标签之后的所有节点
+self 选取当前节点
+attribute 选取当前节点的所有属性 
+namespace  选取当前节点的所有命名空间节点
+
+
+
+
+
+
+
+
+
+
+
 
 
 
