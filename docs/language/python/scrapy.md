@@ -15,6 +15,8 @@ pip install -r requirement.txt
 
 
 ### selector
+
+#### ![官方文档](https://docs.scrapy.org/en/latest/topics/selectors.html)
     scrapy使用css和xpath选择器来定位元素，它有四个基础方法
     xpath() 返回选择器列表，每个选择器代表使用xpath语法选择的节点
     css() 返回选择器列表，每个选择器代表使用css语法选择的节点
@@ -22,7 +24,6 @@ pip install -r requirement.txt
     re() 返回通过正则表达式提取的unicode字符串列表
 
 #### Xpath路径选择
-
 | 符号 | 名称  | 含义 |
 |:--------|:--------- |:--------|
 | / | 绝对路径| 表示根节点开始选取 |
@@ -76,8 +77,6 @@ pip install -r requirement.txt
     self 选取当前节点
     attribute 选取当前节点的所有属性 
     namespace  选取当前节点的所有命名空间节点
-
-
 
 
 
