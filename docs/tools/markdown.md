@@ -9,8 +9,9 @@
 - \^ 表示上标；\_ 表示下标。 
 - {} 多个字符可以括起来，表示一个整体代码上标或者下标。
 
+## 表格制作
 ```
-| Column 1 | Column 2  |	Column 3 |
+| Column1 | Column2  |	Column3 |
 |:--------| :---------:|--------:|
 | centered 文本居左 | right-aligned 文本居中 |right-aligned 文本居右|
 ```
