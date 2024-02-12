@@ -16,7 +16,7 @@ pip install -r requirement.txt
 
 ### selector
 
-#### ![官方文档](https://docs.scrapy.org/en/latest/topics/selectors.html)
+#### [官方文档](https://docs.scrapy.org/en/latest/topics/selectors.html)
     scrapy使用css和xpath选择器来定位元素，它有四个基础方法
     xpath() 返回选择器列表，每个选择器代表使用xpath语法选择的节点
     css() 返回选择器列表，每个选择器代表使用css语法选择的节点
