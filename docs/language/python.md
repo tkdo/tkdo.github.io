@@ -34,11 +34,10 @@ data["label"].replace("Iris-setosa", 0, inplace=True)
     kill -TERM pid_of_uvicorn_server
     ```
 
-### [Jupyter lab](./python/jupyterlab.md)
+### [Jupyter](./python/jupyterlab.md)
 ### [tqdm](./python/tqdm.md)
 ### [scrapy](./python/scrapy.md)
-
-
+### [message](./python/message.md)
 
 
 
