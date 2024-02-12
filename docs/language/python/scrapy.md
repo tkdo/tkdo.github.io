@@ -21,4 +21,8 @@ pip install -r requirement.txt
     extract() 返回被选择元素的unicode字符串
     re() 返回通过正则表达式提取的unicode字符串列表
 
+#### Xpath路径选择
+
+
+
 
