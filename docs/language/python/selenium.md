@@ -39,8 +39,8 @@ text 获取元素的文本 <div>hello</div>
 title 获取页面的title
 current_url 获取当前页面URL
 get_attribute() 获取属性值<a href="www.baidu.com"></a>
-is_display() 判断元素是否可见
-is_enabled() 判断元素是否可用
+is_display() 判断元素是否可见，浏览器渲染加载出来，
+is_enabled() 判断元素是否可用，是否可用，有可能被广告遮盖，不可以点击，但是已经加载出来。
 ```
 ##### 窗口操作
 ```python
@@ -53,6 +53,8 @@ refresh() 刷新
 close() 关闭浏览器按钮(关闭单个窗口)
 quit() 关闭webDriver启动的窗口
 ```
+#### 案例
+
 ##### 访问百度，输入搜索词，并点击搜索
 ```python
 #encoding:utf-8
@@ -109,6 +111,30 @@ def test02():
     print(transTarget.is_displayed())
     print(transTarget.is_enabled())
 ```
+##### 爬当当网书籍的数据
+```python
+def test03():
+    driver.implicitly_wait(30)
+    # get方法会一直等到页面被完全加载,然后才会继续程序,通常测试会在这里选择 time.sleep(2)
+    driver.get("https://www.dangdang.com/")
+    driver.maximize_window()
+    # 获取输入框
+    key = driver.find_element(By.ID,"key_S")
+    key.send_keys("科幻")
+    # 获取搜索框 点击搜索
+    search = driver.find_element(By.CSS_SELECTOR,"#form_search_new .button")
+    search.click()
+    # 获取商品标题及价格
+    for i in range(5):
+        shoplist = driver.find_elements(By.CSS_SELECTOR,".shoplist li")
+        for li in shoplist:
+            print(li.find_element(By.CSS_SELECTOR,"a").get_attribute("title"))
+            print(li.find_element(By.CSS_SELECTOR,".search_now_price").text)
+    # 获取下一页的按钮
+    next = driver.find_element(By.LINK_TEXT,"下一页")
+    next.click()
+```
+
 
 
 
