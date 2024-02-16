@@ -53,7 +53,32 @@ refresh() 刷新
 close() 关闭浏览器按钮(关闭单个窗口)
 quit() 关闭webDriver启动的窗口
 ```
-
+##### 访问有道翻译网站，输入单词，并获取翻译后的内容
+```python
+#encoding:utf-8
+from datetime import time
+from selenium import webdriver
+# 调用环境变量指定的PhantomJS浏览器创建浏览器对象
+from selenium.webdriver.common.by import By
+driver = webdriver.Chrome("./chromedriver.exe")
+# get方法会一直等到页面被完全加载,然后才会继续程序,通常测试会在这里选择 time.sleep(2)
+driver.get("https://fanyi.youdao.com/")
+time.sleep(4)
+# 获取输入框
+input = driver.find_element(By.ID,"inputOriginal")
+# 输入内容
+input.send_keys("hello")
+# 获取翻译按钮
+tbtn = driver.find_element(By.ID,"transMachine")
+# 先获取遮挡的广告条 点击关闭按钮
+close_btn = driver.find_element(By.CSS_SELECTOR,".guide-con .guide-close")
+close_btn.click()
+# 点击翻译
+tbtn.click()
+# 获取翻译后的内容
+transTarget = driver.find_element(By.ID,"transTarget")
+print(transTarget.text)
+```
 
 
 
