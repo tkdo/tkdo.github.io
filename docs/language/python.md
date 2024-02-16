@@ -38,6 +38,6 @@ data["label"].replace("Iris-setosa", 0, inplace=True)
 ### [tqdm](./python/tqdm.md)
 ### [scrapy](./python/scrapy.md)
 ### [message](./python/message.md)
-
+### [selenium](./python/selenium.md)
 
 
