@@ -134,11 +134,84 @@ def test03():
     next = driver.find_element(By.LINK_TEXT,"下一页")
     next.click()
 ```
+#### 显示等待
+```python
+from selenium.webdriver.support.ui import WebDriverwait
+from selenium.webdriver.support import expected_conditions as EC
+#程序每0.5秒检查，是否满足:标题包含“百度一下”这个条件，检查是否满足条件的最长时间为:15秒，超过15秒仍未满足条件则抛出异常
+WebDriverwait（driver，15).until（Ec.title_contains（“百度一下”）
+#程序每0.5秒检查，是否满足:某定位的元素出现，检查是否满足条件的最长时间为:15秒，超过15秒仍未满足条件则抛出异常
+WebDriverwait(driver，15）.until（Ec.visibility_of_element_located(By.CSS_SELECTOR，“XX”））
+```
+#### 隐式等待
+```python
+implicitly_wait(time_to_wait)
+设置时间单位为秒 例如30秒 implicitly_wait(30) 意思是超过30秒没有定位到一个元素 程序就回抛出异常,期间会一直轮询查找定位元素
+```
+#### 鼠标及键盘操作
+##### 鼠标操作
+```python
+context_click() 右击
+double_click() 双击
+drag_and_drop() 拖动
+move_to_element() 悬停
+perform()    执行
+```
+##### 百度打开更多
+```python
+def test04():
+    driver  = __driver()
+    from datetime import time
+    from selenium import webdriver
+    # 调用环境变量指定的PhantomJS浏览器创建浏览器对象
+    from selenium.webdriver import ActionChains
+    from selenium.webdriver.common.by import By
+    # get方法会一直等到页面被完全加载,然后才会继续程序,通常测试会在这里选择 time.sleep(2)
+    driver.get("https://www.baidu.com/")
+    more = driver.find_element(By.LINK_TEXT,"更多")
+    # 将鼠标移动到更多按钮
+    ActionChains(driver).move_to_element(more).perform()
+```
 
+##### 键盘操作
+```python
+send_keys（Keys,BACK_SPACE）删除键（Backspace）
+send_keys（Keys.SPACE）空格键（Space）
+send_keys（Keys.TAB）制表键（Tab）
+send_keys（Keys·ESCAPE）回退键（ESC）
+send_keys（Keys·ENTER）回车键（Enter）
+send_keys（Keys.CONTROL，'a'）全选（Ctrl+A）
+send_keys（Keys.CONTROL，'c'）复制（Ctr1+C）
+```
 
+##### 百度键盘操作
+```python
+from selenium.webdriver.common.keys import Keys
+driver.get("https://www.baidu.com/")
+element = driver.find_element(By.ID,"kw")
+#输入用户名
+element.send_keys("admin1")
+#删除1
+element.send_keys(Keys.BACK_SPACE)
+#全选
+element.send_keys(Keys.CONTROL,'a')
+#复制
+element.send_keys(Keys.CONTROL,'c')
+#粘贴
+element.send_keys(Keys.CONTROL,'v')
+```
 
+#### 滚动条
+    在HTML页面中，由于前端技术框架的原因，页面元素为动态显示，元素根据滚动条的下拉而被加载
+    #1.设置]avascritp脚本控制滚动条，（0:左边距；1000:上边距；单位像素）
+    js="window.scro11To(0,1000)"
+    #2，WebDriver调用js脚本方法
+    driver.execute_script(js）
 
-
+####  窗口截图
+    自动化脚本是由程序去执行的，因此有时候打印的错误信息并不是十分明确。如果在执行出错的时候对当前窗口截图保存，那么通过图片就可以非常直观地看到出错的原因
+    #截取当前窗口
+    driver.get_screenshot_as_file("./demo.png")
 
 
 
