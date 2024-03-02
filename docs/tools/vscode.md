@@ -21,24 +21,6 @@
 - launch.json
 ```json
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "cwd": "${workspaceFolder}",
-            "args":["--config_mode", "file",  "--run_mode", "cluster"]
-        }
-    ]
-}
-{
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
@@ -53,6 +35,45 @@
             "console": "integratedTerminal",
             "env":{},
             "cwd":"${workspaceFolder}"
+        }
+    ]
+}
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python:xm",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "HERMES_HOME": "/root/data/workspace/xm",
+                "xm_HOME": "/root/data/workspace/xm"
+            },
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "python": "/data/env/miniconda3/envs/env_py39_dev/bin/python",
+            "args": [
+                "6000"
+            ]
+        },
+        {
+            "name": "Python: Pytest",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "console": "integratedTerminal",
+            "env": {
+                "HERMES_HOME": "/root/data/workspace/xm",
+                "xm_HOME": "/root/data/workspace/xm"
+            },
+            "justMyCode": false,
+            "python": "/data/env/miniconda3/envs/env_py39_dev/bin/python",
+            "args": [
+                "-s"
+            ]
         }
     ]
 }

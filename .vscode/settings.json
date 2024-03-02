@@ -1,0 +1,29 @@
+{
+    "python.pythonPath": "/data/env/miniconda3/envs/env_py39_dev/bin/python",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.fontFamily": "Consolas",
+    "editor.fontWeight": "400",
+    "editor.fontSize": 20,
+    "editor.lineHeight": 22,
+    "editor.rulers": [
+        80
+    ],
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "git.confirmSync": false,
+    "workbench.tree.indent": 20,
+    "workbench.fontsize": 40,
+    "window.zoomLevel": 0,
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#04f110", // 光标颜色设置为红色
+        "editorCursor.background": "#fafafa" // 光标遮挡字符时的背景色设置为白色
+    },
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 5, 
+    //"python.analysis.extraPaths": ["/data/vjuicefs_ai_rank/public_data/11151547/env/miniconda3/envs/env_py311_chat2data/lib/python3.11/site-packages/hermes"],
+    "python.analysis.indexing": true,
+    "python.analysis.typeCheckingMode": "off",
+
+}
