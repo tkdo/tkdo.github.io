@@ -98,7 +98,6 @@ nav:
     - maven: tools/maven.md
   - 其他: 
     - other/index.md
-    - gym工具包: other/gym.md
     - opencv: other/opencv.md
     - 3d建模: other/3dmodel.md
     - 3d打印: other/3dprint.md
