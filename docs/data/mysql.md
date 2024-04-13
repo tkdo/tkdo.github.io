@@ -25,3 +25,21 @@ socket=/var/lib/mysql/mysql.sock
 user=root
 socket=/var/lib/mysql/mysql.sock
 ```
+
+
+
+```
+SET GLOBAL validate_password.LENGTH = 0;
+SET GLOBAL validate_password.policy = 0;
+SET GLOBAL validate_password.mixed_case_count = 0;
+SET GLOBAL validate_password.number_count = 0;
+SET GLOBAL validate_password.special_char_count = 0;
+SET GLOBAL validate_password.check_user_name = 0;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'root'; 
+
+FLUSH PRIVILEGES;
+
+CREATE USER 'app'@'%' IDENTIFIED BY 'app';     --新建用户gpt
+CREATE DATABASE sharingan;                        --新建库
+GRANT ALL PRIVILEGES ON sharingan.* TO 'app'@'%'; --给用户授权
+```
