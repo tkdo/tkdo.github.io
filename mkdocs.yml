@@ -119,6 +119,9 @@ plugins:
 markdown_extensions:
   - pymdownx.arithmatex: # latex支持
       generic: true
+      block:
+        start: '\\['
+        end: '\\]'
   - attr_list # 给图片后面添加{width="300"}设置大小
   - toc:
       permalink: true # 固定标题位置为当前位置
