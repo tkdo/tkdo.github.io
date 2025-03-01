@@ -1,4 +1,4 @@
-# 1. 流程
+# 1. adog流程
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/tkdo/device/refs/heads/main/svg/term-serving.drawio.svg" width="100%">  <!-- 居中且宽度占父容器 80% -->
@@ -17,9 +17,23 @@ conda create -n dseek python=3.9.5
 ```
 ## 2.3 安装依赖包
 
-## 2.4 启动接口
+## 2.4 下载deepseek
+要求：GPU/‌16GB显存 ‌CPU‌:8核/32G内存
 
-## 2.5 UI界面效果
+下载代码：https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/files
+
+```bash
+pip install modelscope
+modelscope download --model deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B README.md --local_dir ./dir
+```
+
+## 
+
+## 2.5 启动接口
+
+
+## 2.6 UI界面效果
+
 
 
 
