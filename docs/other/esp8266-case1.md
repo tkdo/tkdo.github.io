@@ -26,15 +26,14 @@ conda create -n dseek python=3.9.5
 pip install modelscope
 modelscope download --model deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B README.md --local_dir ./dir
 ```
-
-## 
+## 2.5 代码
+https://raw.githubusercontent.com/tkdo/hzoo/refs/heads/main/api.py
 
 ## 2.5 启动接口
-
+```bash
+uvicorn api:app --reload
+```
 
 ## 2.6 UI界面效果
-
-
-
 
 
