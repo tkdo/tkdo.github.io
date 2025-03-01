@@ -16,6 +16,7 @@
 conda create -n dseek python=3.9.5
 ```
 ## 2.3 安装依赖包
+https://raw.githubusercontent.com/tkdo/hzoo/refs/heads/main/requirements.txt
 
 ## 2.4 下载deepseek
 要求：GPU/‌16GB显存 ‌CPU‌:8核/32G内存
@@ -33,7 +34,5 @@ https://raw.githubusercontent.com/tkdo/hzoo/refs/heads/main/api.py
 ```bash
 uvicorn api:app --reload
 ```
-
-## 2.6 UI界面效果
 
 
