@@ -34,9 +34,9 @@ https://raw.githubusercontent.com/tkdo/hzoo/refs/heads/main/api.py
 ```bash
 uvicorn api:app --reload
 ```
+## 2.6 遇到问题
 
-
-??? note "2.6 可能遇到问题" 
+??? note "numpy版本问题" 
     ```python
     A module that was compiled using NumPy 1.x cannot be run in
     NumPy 2.2.3 as it may crash. To support both 1.x and 2.x
@@ -105,6 +105,6 @@ uvicorn api:app --reload
     pip install "transformers>=5.3" "accelerate>=0.28"
     """
     ```
-    
+
 
 
