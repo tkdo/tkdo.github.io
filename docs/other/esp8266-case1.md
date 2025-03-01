@@ -5,8 +5,7 @@
 </div>
 
 
-# 2. serving 本地搭建
-
+# 2. deepseek1.5B本地搭建
 
 ## 2.1 minconda安装
   下载安装地址：https://www.anaconda.com/docs/getting-started/miniconda/install
@@ -18,7 +17,7 @@ conda create -n dseek python=3.9.5
 ## 2.3 安装依赖包
 https://raw.githubusercontent.com/tkdo/hzoo/refs/heads/main/requirements.txt
 
-## 2.4 下载deepseek
+## 2.4 下载deepseek1.5B
 要求：GPU/‌16GB显存 ‌CPU‌:8核/32G内存
 
 下载代码：https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B/files
@@ -33,6 +32,8 @@ https://raw.githubusercontent.com/tkdo/hzoo/refs/heads/main/api.py
 ## 2.5 启动接口
 ```bash
 uvicorn api:app --reload
+# 测试POST接口
+curl -X POST -H "Content-Type: application/json" -d '{"query": "北京首都是哪里"}' http://127.0.0.1:8000/
 ```
 ## 2.6 遇到问题
 
